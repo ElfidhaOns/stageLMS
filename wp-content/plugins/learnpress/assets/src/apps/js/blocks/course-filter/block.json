@@ -1,0 +1,42 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "learnpress/course-filter",
+	"title": "Course Filter",
+	"category": "learnpress-category",
+	"description": "Show filter fields for courses.",
+	"textdomain": "learnpress",
+	"keywords": ["filter", "learnpress"],
+	"icon": "filter",
+	"usesContext": [],
+	"attributes": {
+		"title": {
+			"type": "string",
+			"default": "Course Filter"
+		},
+		"numberLevelCategory": {
+			"type": "number",
+			"default": 1
+		},
+		"showInRest": {
+			"type": "boolean",
+			"default": true
+		},
+		"hideCountZero": {
+			"type": "boolean",
+			"default": true
+		},
+		"searchSuggestion": {
+			"type": "boolean",
+			"default": true
+		}
+	},
+	"supports": {
+		"inserter": true,
+		"reusable": true,
+		"reorder": true,
+		"html": false,
+		"multiple": true,
+		"wrapper": false
+	}
+}

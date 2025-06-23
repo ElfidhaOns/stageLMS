@@ -1,0 +1,1 @@
+import{a as p,j as r,b as i}from"./main-461.js";function l({id:t,className:a,type:s,onClick:n,icn:o,disabled:b,children:e,style:u}){const{css:c}=p();return r.jsx("button",{"data-testid":`${t}-cmp-btn`,style:u,className:`${o?"icn-btn":c(i.btn)}  ${a}`,type:s||"button",onClick:n,"aria-label":"btcd-button",disabled:b,children:e})}export{l as B};

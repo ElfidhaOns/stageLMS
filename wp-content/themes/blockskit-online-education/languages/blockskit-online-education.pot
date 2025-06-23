@@ -1,0 +1,776 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Blockskit Online Education\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-04-11 07:17+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.7.2; wp-6.7.2\n"
+"X-Domain: blockskit-online-education"
+
+#: patterns/courses.php:39
+msgid "$49.00"
+msgstr ""
+
+#: patterns/courses.php:167
+msgid "$65.00"
+msgstr ""
+
+#: patterns/courses.php:103
+msgid "$90.00"
+msgstr ""
+
+#: patterns/courses.php:89
+msgid "(4.5 Ratings)"
+msgstr ""
+
+#: patterns/courses.php:217
+msgid "(4.7 Ratings)"
+msgstr ""
+
+#: patterns/courses.php:153
+msgid "(4.9 Ratings)"
+msgstr ""
+
+#: patterns/about.php:112
+msgid "+9632-145632"
+msgstr ""
+
+#: patterns/courses.php:192
+msgid "05 Lessons"
+msgstr ""
+
+#: patterns/courses.php:64
+msgid "08 Lessons"
+msgstr ""
+
+#: patterns/courses.php:128
+msgid "11 Lessons"
+msgstr ""
+
+#: patterns/courses.php:74
+msgid "16 Students"
+msgstr ""
+
+#: patterns/courses.php:202
+msgid "24 Students"
+msgstr ""
+
+#: patterns/courses.php:138
+msgid "26 Students"
+msgstr ""
+
+#: patterns/courses.php:231
+msgid "35+ More Best Courses We Are Offering "
+msgstr ""
+
+#: patterns/about.php:39
+msgid "350+ Members"
+msgstr ""
+
+#: patterns/header.php:27
+msgid "About Us"
+msgstr ""
+
+#: patterns/testimonials.php:98
+msgid "ACCOUNT, STUDENT"
+msgstr ""
+
+#: patterns/faculties.php:152
+msgid "All Categories"
+msgstr ""
+
+#: patterns/about.php:72
+msgid "Always Give a Top Instructors"
+msgstr ""
+
+#: patterns/courses.php:51
+msgid "ARCHITECTURE"
+msgstr ""
+
+#: patterns/faculties.php:53
+msgid "Arts And Design"
+msgstr ""
+
+#: patterns/about.php:68
+msgid "Best &amp; Valuable Online Certification"
+msgstr ""
+
+#: patterns/about.php:57
+msgid "Best Limitless Learning And Limitless Possibilities"
+msgstr ""
+
+#: patterns/template-order-confirmation.php:68
+msgid "Billing address"
+msgstr ""
+
+#. Name of the theme
+msgid "Blockskit Online Education"
+msgstr ""
+
+#. Description of the theme
+msgid ""
+"Blockskit Online Education is a modern, versatile FSE WordPress theme "
+"designed for education, academy, course, e-learning, online learning, lesson,"
+" study, school, teacher, tutor, university, classes, college, and other "
+"education websites—no coding required. With full-site editing, you can "
+"easily customize every aspect of your site, including headers and footers. "
+"Featuring multiple templates, patterns, and style variations, it adapts "
+"seamlessly to various aesthetics and business needs."
+msgstr ""
+
+#. Author of the theme
+msgid "BlockskitDev"
+msgstr ""
+
+#: patterns/template-cart.php:212
+msgid "Browse store"
+msgstr ""
+
+#: patterns/courses.php:179
+msgid "BUSINESS"
+msgstr ""
+
+#: patterns/faculties.php:35
+msgid "Business Course"
+msgstr ""
+
+#: patterns/about.php:108
+msgid "Call Us Anytime!"
+msgstr ""
+
+#: patterns/testimonials.php:80
+msgid "Celia Almeda"
+msgstr ""
+
+#: patterns/latest-posts.php:21
+msgid "Checkout Our Blogs"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Color name"
+msgid "Accent"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Color name"
+msgid "Accent Text"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Color name"
+msgid "Background"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Color name"
+msgid "Body"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Color name"
+msgid "Current Color"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Color name"
+msgid "Foreground"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Color name"
+msgid "Heading"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Color name"
+msgid "Highlight"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Color name"
+msgid "Hover"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Color name"
+msgid "Inherit"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Color name"
+msgid "Light"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Color name"
+msgid "Neutral"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Color name"
+msgid "Outline"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Color name"
+msgid "Primary"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Color name"
+msgid "Pure Black"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Color name"
+msgid "Pure White"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Color name"
+msgid "Secondary"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Color name"
+msgid "Secondary Accent"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Color name"
+msgid "Secondary Accent Text"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Color name"
+msgid "Surface"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Color name"
+msgid "Transparent"
+msgstr ""
+
+#: patterns/footer.php:51
+msgid "Company"
+msgstr ""
+
+#: patterns/faculties.php:111
+msgid "Computer Science"
+msgstr ""
+
+#: patterns/header.php:30
+msgid "Contact"
+msgstr ""
+
+#: patterns/footer.php:100
+msgid "Copyright © %d ·"
+msgstr ""
+
+#: patterns/header.php:29
+msgid "Courses"
+msgstr ""
+
+#: patterns/latest-posts.php:25 patterns/faculties.php:25
+msgid "Cumque modi placeat ratione occaecat pariatur ultricies cillum!"
+msgstr ""
+
+#: patterns/faculties.php:39 patterns/faculties.php:57
+#: patterns/faculties.php:75 patterns/faculties.php:93
+#: patterns/faculties.php:115 patterns/faculties.php:133
+msgid "Deleniti aliqua habitant cupiditate numquam."
+msgstr ""
+
+#: patterns/template-order-confirmation.php:48
+msgid "Downloads"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Duotone name"
+msgid "Light"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Duotone name"
+msgid "Primary"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Duotone name"
+msgid "Secondary"
+msgstr ""
+
+#: patterns/about.php:63
+msgid ""
+"Eascetur posuere animi repellendus, init adipiscing! Animi! Reprehenderit "
+"incidunt nulla, nisi voluptatum unde explicabo.&nbsp;"
+msgstr ""
+
+#: patterns/courses.php:115
+msgid "ENGINEERING"
+msgstr ""
+
+#: patterns/about.php:80
+msgid "Experienced Member Who always support"
+msgstr ""
+
+#: patterns/header.php:28
+msgid "Faculties"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Font family name"
+msgid "Inter"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Font family name"
+msgid "Jost"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Font family name"
+msgid "Poppins"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Font size name"
+msgid "Large"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Font size name"
+msgid "Medium"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Font size name"
+msgid "Small"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Font size name"
+msgid "X Large"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Font size name"
+msgid "X Small"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Font size name"
+msgid "XX Large"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Font size name"
+msgid "XXX Large"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Font size name"
+msgid "XXXX Large"
+msgstr ""
+
+#: patterns/testimonials.php:46
+msgid "Frank Kinney"
+msgstr ""
+
+#: patterns/header.php:34 patterns/hero-banner.php:33
+msgid "Get Started"
+msgstr ""
+
+#: patterns/about.php:97
+msgid "Get Started Now"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Gradient name"
+msgid "Primary"
+msgstr ""
+
+#: patterns/testimonials.php:27
+msgid ""
+"Gravida mollitia vulputate irure velit optio! Tempor molestias sollicitudin. "
+"Voluptates quam bibendum Pulvinar."
+msgstr ""
+
+#: patterns/testimonials.php:55 patterns/testimonials.php:89
+msgid ""
+"Gravida mollitia vulputate irure velit optio! Tempor molestias sollicitudin. "
+"Voluptates quam bibendum."
+msgstr ""
+
+#: patterns/header.php:26
+msgid "Home"
+msgstr ""
+
+#. Author URI of the theme
+msgid "https://blockskit.com"
+msgstr ""
+
+#. URI of the theme
+msgid "https://blockskit.com/blockskit-online-education/"
+msgstr ""
+
+#: patterns/courses.php:29
+msgid ""
+"Impedit nulla amet aperiam reprehenderit congue hac, id, qui dapibus magni "
+"tempor hendrerit blanditiis! Hic aptent eum quae, imperdiet, quo pretium, "
+"molestiae montes accus."
+msgstr ""
+
+#: patterns/courses.php:208
+msgid "Intermediate Interior Learning Course"
+msgstr ""
+
+#: patterns/latest-posts.php:16
+msgid "LATEST BLOG"
+msgstr ""
+
+#: patterns/faculties.php:43 patterns/faculties.php:61
+#: patterns/faculties.php:79 patterns/faculties.php:97
+#: patterns/faculties.php:119 patterns/faculties.php:137
+msgid "LEARN MORE.."
+msgstr ""
+
+#: patterns/faculties.php:129
+msgid "Management"
+msgstr ""
+
+#: patterns/faculties.php:156
+msgid "Need Help?"
+msgstr ""
+
+#: patterns/template-cart.php:220
+msgid "New in store"
+msgstr ""
+
+#: patterns/footer.php:19
+msgid ""
+"Nisl libero ullamcorper id ipsum viverra mauris non pellentesque placerat "
+"lorem lacinia sagittis non pretium."
+msgstr ""
+
+#: patterns/template-product-search-results.php:48
+msgid "No products were found matching your selection."
+msgstr ""
+
+#: patterns/hero-banner.php:18
+msgid "ONLINE EDUCATION"
+msgstr ""
+
+#: patterns/template-order-confirmation.php:22
+msgid "Order Confirmation"
+msgstr ""
+
+#: patterns/template-order-confirmation.php:40
+msgid "Order details"
+msgstr ""
+
+#: patterns/faculties.php:16
+msgid "OUR FACULTIES"
+msgstr ""
+
+#: patterns/faculties.php:21
+msgid "Our Feature Faculties"
+msgstr ""
+
+#: patterns/about.php:2
+msgctxt "Pattern title"
+msgid "About"
+msgstr ""
+
+#: patterns/courses.php:2
+msgctxt "Pattern title"
+msgid "Courses"
+msgstr ""
+
+#: patterns/faculties.php:2
+msgctxt "Pattern title"
+msgid "Faculties"
+msgstr ""
+
+#: patterns/footer.php:2
+msgctxt "Pattern title"
+msgid "Footer"
+msgstr ""
+
+#: patterns/header.php:2
+msgctxt "Pattern title"
+msgid "Header"
+msgstr ""
+
+#: patterns/header-home.php:2
+msgctxt "Pattern title"
+msgid "Header Home"
+msgstr ""
+
+#: patterns/hero-banner.php:2
+msgctxt "Pattern title"
+msgid "Hero Banner"
+msgstr ""
+
+#: patterns/home.php:2
+msgctxt "Pattern title"
+msgid "Home"
+msgstr ""
+
+#: patterns/latest-posts.php:2
+msgctxt "Pattern title"
+msgid "Latest Posts"
+msgstr ""
+
+#: patterns/template-404.php:2
+msgctxt "Pattern title"
+msgid "Template 404"
+msgstr ""
+
+#: patterns/template-archive.php:2
+msgctxt "Pattern title"
+msgid "Template Archive"
+msgstr ""
+
+#: patterns/template-archive-product.php:2
+msgctxt "Pattern title"
+msgid "Template Archive Product"
+msgstr ""
+
+#: patterns/template-blog-listing.php:2
+msgctxt "Pattern title"
+msgid "Template Blog Listing"
+msgstr ""
+
+#: patterns/template-cart.php:2
+msgctxt "Pattern title"
+msgid "Template Cart"
+msgstr ""
+
+#: patterns/template-checkout.php:2
+msgctxt "Pattern title"
+msgid "Template Checkout"
+msgstr ""
+
+#: patterns/template-full-width.php:2
+msgctxt "Pattern title"
+msgid "Template Full Width"
+msgstr ""
+
+#: patterns/template-index.php:2
+msgctxt "Pattern title"
+msgid "Template Index"
+msgstr ""
+
+#: patterns/template-order-confirmation.php:2
+msgctxt "Pattern title"
+msgid "Template Order Confirmation"
+msgstr ""
+
+#: patterns/template-page.php:2
+msgctxt "Pattern title"
+msgid "Template Page"
+msgstr ""
+
+#: patterns/template-page-no-gap.php:2
+msgctxt "Pattern title"
+msgid "Template Page No Gap"
+msgstr ""
+
+#: patterns/template-page-no-title.php:2
+msgctxt "Pattern title"
+msgid "Template Page No Title"
+msgstr ""
+
+#: patterns/template-product-search-results.php:2
+msgctxt "Pattern title"
+msgid "Template Product Search Results"
+msgstr ""
+
+#: patterns/template-search.php:2
+msgctxt "Pattern title"
+msgid "Template Search"
+msgstr ""
+
+#: patterns/template-single.php:2
+msgctxt "Pattern title"
+msgid "Template Single"
+msgstr ""
+
+#: patterns/template-single-product.php:2
+msgctxt "Pattern title"
+msgid "Template Single Product"
+msgstr ""
+
+#: patterns/testimonials.php:2
+msgctxt "Pattern title"
+msgid "Testimonials"
+msgstr ""
+
+#: patterns/courses.php:23
+msgid "Pick A Course To Get Started Your Study"
+msgstr ""
+
+#: patterns/courses.php:18
+msgid "POPULAR COURSES"
+msgstr ""
+
+#: patterns/footer.php:37
+msgid "Products"
+msgstr ""
+
+#: patterns/about.php:76
+msgid "Provide Unlimited Online Courses Easily"
+msgstr ""
+
+#: patterns/faculties.php:147
+msgid "Providing Best Lifelong Learning Platform"
+msgstr ""
+
+#: patterns/template-single-product.php:57
+msgid "Related products"
+msgstr ""
+
+#: patterns/footer.php:69
+msgid "Resources"
+msgstr ""
+
+#: patterns/testimonials.php:23
+msgid "Review&#39;s From Our Students"
+msgstr ""
+
+#: patterns/faculties.php:71
+msgid "Science &amp; Tech"
+msgstr ""
+
+#: patterns/testimonials.php:64
+msgid "SCIENCE, STUDENT"
+msgstr ""
+
+#: patterns/template-order-confirmation.php:58
+msgid "Shipping address"
+msgstr ""
+
+#: patterns/template-single-product.php:15
+msgid "Single Product"
+msgstr ""
+
+#: patterns/hero-banner.php:27
+msgid ""
+"Sint taciti aliquid dapibus! Voluptas facilis. Tincidunt pariatur dictumst "
+"nonummy montes. Mollis diam hymenaeos aenean assumenda torquent pariatur. "
+"Pariatur sollicitudin bibendum."
+msgstr ""
+
+#: patterns/template-search.php:50
+msgid "Sorry, but nothing matched your search terms. Try another search?"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Space size name"
+msgid "Large"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Space size name"
+msgid "Medium"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Space size name"
+msgid "Small"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Space size name"
+msgid "X Large"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Space size name"
+msgid "X Small"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Space size name"
+msgid "XX Large"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Space size name"
+msgid "XX Small"
+msgstr ""
+
+#: patterns/footer.php:83
+msgid "Support"
+msgstr ""
+
+#: patterns/hero-banner.php:23
+msgid "Take Your Learning To The Next Level"
+msgstr ""
+
+#: patterns/testimonials.php:18
+msgid "TESTIMONIALS"
+msgstr ""
+
+#: patterns/courses.php:80
+msgid "The Power Of Podcast For Story Telling Lessons"
+msgstr ""
+
+#: patterns/courses.php:144
+msgid "The Ultimate Developer Course For Future Learner"
+msgstr ""
+
+#: functions.php:48
+msgid "Theme Patterns"
+msgstr ""
+
+#: patterns/template-404.php:23
+msgid "This page could not be found. Maybe try a search?"
+msgstr ""
+
+#: patterns/latest-posts.php:25 patterns/faculties.php:25
+msgid "Vestibulum! Facilis hendrerit fusce accusamus sed volutpat."
+msgstr ""
+
+#: patterns/faculties.php:89
+msgid "Video &amp; Photograhy"
+msgstr ""
+
+#: patterns/courses.php:236
+msgid "View All Courses"
+msgstr ""
+
+#: patterns/testimonials.php:32
+msgid "View All Reviews"
+msgstr ""
+
+#: patterns/hero-banner.php:37
+msgid "View Courses"
+msgstr ""
+
+#: patterns/about.php:52
+msgid "WHY CHOOSE US"
+msgstr ""
+
+#: patterns/template-cart.php:26 patterns/template-cart.php:89
+#: patterns/template-cart.php:152
+msgid "You may be interested in…"
+msgstr ""
+
+#: patterns/template-cart.php:208
+msgid "Your cart is currently empty!"
+msgstr ""
+
+#: patterns/footer.php:106
+msgid "· All rights reserved"
+msgstr ""

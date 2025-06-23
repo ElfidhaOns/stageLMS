@@ -1,0 +1,540 @@
+2025-06-22T10:52:56+00:00 CRITICAL Uncaught Error: Call to undefined function media_handle_upload() in /home/vol11_5/infinityfree.com/if0_39271998/htdocs/wp-content/themes/montheme/tutor/dashboard/my-courses.php:8
+Stack trace:
+#0 /home/vol11_5/infinityfree.com/if0_39271998/htdocs/wp-content/plugins/tutor/includes/tutor-template-functions.php(130): include()
+#1 /home/vol11_5/infinityfree.com/if0_39271998/htdocs/wp-content/plugins/tutor/templates/dashboard.php(255): tutor_load_template('dashboard.my-co...')
+#2 /home/vol11_5/infinityfree.com/if0_39271998/htdocs/wp-includes/template-loader.php(106): include('/home/vol11_5/i...')
+#3 /home/vol11_5/infinityfree.com/if0_39271998/htdocs/wp-blog-header.php(19): require_once('/home/vol11_5/i...')
+#4 /home/vol11_5/infinityfree.com/if0_39271998/htdocs/index.php(17): require('/home/vol11_5/i...')
+#5 {main}
+  thrown in /home/vol11_5/infinityfree.com/if0_39271998/htdocs/wp-content/themes/montheme/tutor/dashboard/my-courses.php on line 8
+
+2025-06-22T10:52:56+00:00 CRITICAL Uncaught Error: Call to undefined function media_handle_upload() in /home/vol11_5/infinityfree.com/if0_39271998/htdocs/wp-content/themes/montheme/tutor/dashboard/my-courses.php:8
+Stack trace:
+#0 /home/vol11_5/infinityfree.com/if0_39271998/htdocs/wp-content/plugins/tutor/includes/tutor-template-functions.php(130): include()
+#1 /home/vol11_5/infinityfree.com/if0_39271998/htdocs/wp-content/plugins/tutor/templates/dashboard.php(255): tutor_load_template('dashboard.my-co...')
+#2 /home/vol11_5/infinityfree.com/if0_39271998/htdocs/wp-includes/template-loader.php(106): include('/home/vol11_5/i...')
+#3 /home/vol11_5/infinityfree.com/if0_39271998/htdocs/wp-blog-header.php(19): require_once('/home/vol11_5/i...')
+#4 /home/vol11_5/infinityfree.com/if0_39271998/htdocs/index.php(17): require('/home/vol11_5/i...')
+#5 {main}
+  thrown in /home/vol11_5/infinityfree.com/if0_39271998/htdocs/wp-content/themes/montheme/tutor/dashboard/my-courses.php on line 8
+
+2025-06-22T10:52:56+00:00 CRITICAL Uncaught Error: Call to undefined function media_handle_upload() in /home/vol11_5/infinityfree.com/if0_39271998/htdocs/wp-content/themes/montheme/tutor/dashboard/my-courses.php:8
+Stack trace:
+#0 /home/vol11_5/infinityfree.com/if0_39271998/htdocs/wp-content/plugins/tutor/includes/tutor-template-functions.php(130): include()
+#1 /home/vol11_5/infinityfree.com/if0_39271998/htdocs/wp-content/plugins/tutor/templates/dashboard.php(255): tutor_load_template('dashboard.my-co...')
+#2 /home/vol11_5/infinityfree.com/if0_39271998/htdocs/wp-includes/template-loader.php(106): include('/home/vol11_5/i...')
+#3 /home/vol11_5/infinityfree.com/if0_39271998/htdocs/wp-blog-header.php(19): require_once('/home/vol11_5/i...')
+#4 /home/vol11_5/infinityfree.com/if0_39271998/htdocs/index.php(17): require('/home/vol11_5/i...')
+#5 {main}
+  thrown in /home/vol11_5/infinityfree.com/if0_39271998/htdocs/wp-content/themes/montheme/tutor/dashboard/my-courses.php on line 8
+
+2025-06-22T11:41:38+00:00 CRITICAL syntax error, unexpected token "<", expecting end of file in /home/vol11_5/infinityfree.com/if0_39271998/htdocs/wp-content/themes/montheme/tutor/dashboard/my-courses.php on line 58
+
+2025-06-22T11:41:38+00:00 CRITICAL syntax error, unexpected token "<", expecting end of file in /home/vol11_5/infinityfree.com/if0_39271998/htdocs/wp-content/themes/montheme/tutor/dashboard/my-courses.php on line 58
+
+2025-06-22T11:41:38+00:00 CRITICAL syntax error, unexpected token "<", expecting end of file in /home/vol11_5/infinityfree.com/if0_39271998/htdocs/wp-content/themes/montheme/tutor/dashboard/my-courses.php on line 58
+
+2025-06-22T11:41:46+00:00 CRITICAL syntax error, unexpected token "<", expecting end of file in /home/vol11_5/infinityfree.com/if0_39271998/htdocs/wp-content/themes/montheme/tutor/dashboard/my-courses.php on line 58
+
+2025-06-22T11:41:46+00:00 CRITICAL syntax error, unexpected token "<", expecting end of file in /home/vol11_5/infinityfree.com/if0_39271998/htdocs/wp-content/themes/montheme/tutor/dashboard/my-courses.php on line 58
+
+2025-06-22T11:41:46+00:00 CRITICAL syntax error, unexpected token "<", expecting end of file in /home/vol11_5/infinityfree.com/if0_39271998/htdocs/wp-content/themes/montheme/tutor/dashboard/my-courses.php on line 58
+
+2025-06-22T12:08:07+00:00 CRITICAL Maximum execution time of 60 seconds exceeded in /home/vol11_5/infinityfree.com/if0_39271998/htdocs/wp-content/plugins/wp-file-manager/lib/php/elFinderVolumeLocalFileSystem.class.php on line 859
+
+2025-06-22T12:08:07+00:00 CRITICAL Maximum execution time of 60 seconds exceeded in /home/vol11_5/infinityfree.com/if0_39271998/htdocs/wp-content/plugins/wp-file-manager/lib/php/elFinderVolumeLocalFileSystem.class.php on line 859
+
+2025-06-22T12:08:07+00:00 CRITICAL Maximum execution time of 60 seconds exceeded in /home/vol11_5/infinityfree.com/if0_39271998/htdocs/wp-content/plugins/wp-file-manager/lib/php/elFinderVolumeLocalFileSystem.class.php on line 859
+
+2025-06-22T12:10:56+00:00 CRITICAL Maximum execution time of 60 seconds exceeded in /home/vol11_5/infinityfree.com/if0_39271998/htdocs/wp-content/plugins/wp-file-manager/lib/php/elFinderVolumeDriver.class.php on line 7251
+
+2025-06-22T12:10:56+00:00 CRITICAL Maximum execution time of 60 seconds exceeded in /home/vol11_5/infinityfree.com/if0_39271998/htdocs/wp-content/plugins/wp-file-manager/lib/php/elFinderVolumeDriver.class.php on line 7251
+
+2025-06-22T12:10:56+00:00 CRITICAL Maximum execution time of 60 seconds exceeded in /home/vol11_5/infinityfree.com/if0_39271998/htdocs/wp-content/plugins/wp-file-manager/lib/php/elFinderVolumeDriver.class.php on line 7251
+
+2025-06-22T12:31:17+00:00 CRITICAL Uncaught Error: Call to undefined function media_handle_upload() in /home/vol11_5/infinityfree.com/if0_39271998/htdocs/wp-content/themes/montheme/tutor/dashboard/my-courses.php:9
+Stack trace:
+#0 /home/vol11_5/infinityfree.com/if0_39271998/htdocs/wp-content/plugins/tutor/includes/tutor-template-functions.php(130): include()
+#1 /home/vol11_5/infinityfree.com/if0_39271998/htdocs/wp-content/plugins/tutor/templates/dashboard.php(255): tutor_load_template('dashboard.my-co...')
+#2 /home/vol11_5/infinityfree.com/if0_39271998/htdocs/wp-includes/template-loader.php(106): include('/home/vol11_5/i...')
+#3 /home/vol11_5/infinityfree.com/if0_39271998/htdocs/wp-blog-header.php(19): require_once('/home/vol11_5/i...')
+#4 /home/vol11_5/infinityfree.com/if0_39271998/htdocs/index.php(17): require('/home/vol11_5/i...')
+#5 {main}
+  thrown in /home/vol11_5/infinityfree.com/if0_39271998/htdocs/wp-content/themes/montheme/tutor/dashboard/my-courses.php on line 9
+
+2025-06-22T12:31:17+00:00 CRITICAL Uncaught Error: Call to undefined function media_handle_upload() in /home/vol11_5/infinityfree.com/if0_39271998/htdocs/wp-content/themes/montheme/tutor/dashboard/my-courses.php:9
+Stack trace:
+#0 /home/vol11_5/infinityfree.com/if0_39271998/htdocs/wp-content/plugins/tutor/includes/tutor-template-functions.php(130): include()
+#1 /home/vol11_5/infinityfree.com/if0_39271998/htdocs/wp-content/plugins/tutor/templates/dashboard.php(255): tutor_load_template('dashboard.my-co...')
+#2 /home/vol11_5/infinityfree.com/if0_39271998/htdocs/wp-includes/template-loader.php(106): include('/home/vol11_5/i...')
+#3 /home/vol11_5/infinityfree.com/if0_39271998/htdocs/wp-blog-header.php(19): require_once('/home/vol11_5/i...')
+#4 /home/vol11_5/infinityfree.com/if0_39271998/htdocs/index.php(17): require('/home/vol11_5/i...')
+#5 {main}
+  thrown in /home/vol11_5/infinityfree.com/if0_39271998/htdocs/wp-content/themes/montheme/tutor/dashboard/my-courses.php on line 9
+
+2025-06-22T12:31:17+00:00 CRITICAL Uncaught Error: Call to undefined function media_handle_upload() in /home/vol11_5/infinityfree.com/if0_39271998/htdocs/wp-content/themes/montheme/tutor/dashboard/my-courses.php:9
+Stack trace:
+#0 /home/vol11_5/infinityfree.com/if0_39271998/htdocs/wp-content/plugins/tutor/includes/tutor-template-functions.php(130): include()
+#1 /home/vol11_5/infinityfree.com/if0_39271998/htdocs/wp-content/plugins/tutor/templates/dashboard.php(255): tutor_load_template('dashboard.my-co...')
+#2 /home/vol11_5/infinityfree.com/if0_39271998/htdocs/wp-includes/template-loader.php(106): include('/home/vol11_5/i...')
+#3 /home/vol11_5/infinityfree.com/if0_39271998/htdocs/wp-blog-header.php(19): require_once('/home/vol11_5/i...')
+#4 /home/vol11_5/infinityfree.com/if0_39271998/htdocs/index.php(17): require('/home/vol11_5/i...')
+#5 {main}
+  thrown in /home/vol11_5/infinityfree.com/if0_39271998/htdocs/wp-content/themes/montheme/tutor/dashboard/my-courses.php on line 9
+
+2025-06-22T16:26:26+00:00 CRITICAL Cannot redeclare set_user_role_from_um_dropdown() (previously declared in /home/vol11_5/infinityfree.com/if0_39271998/htdocs/wp-content/plugins/code-snippets/php/snippet-ops.php(584) : eval()'d code:3) in /home/vol11_5/infinityfree.com/if0_39271998/htdocs/wp-content/plugins/insert-headers-and-footers/includes/class-wpcode-snippet-execute.php(419) : eval()'d code on line 3
+
+2025-06-22T16:26:26+00:00 CRITICAL Cannot redeclare set_user_role_from_um_dropdown() (previously declared in /home/vol11_5/infinityfree.com/if0_39271998/htdocs/wp-content/plugins/code-snippets/php/snippet-ops.php(584) : eval()'d code:3) in /home/vol11_5/infinityfree.com/if0_39271998/htdocs/wp-content/plugins/insert-headers-and-footers/includes/class-wpcode-snippet-execute.php(419) : eval()'d code on line 3
+
+2025-06-22T16:26:26+00:00 CRITICAL Cannot redeclare set_user_role_from_um_dropdown() (previously declared in /home/vol11_5/infinityfree.com/if0_39271998/htdocs/wp-content/plugins/code-snippets/php/snippet-ops.php(584) : eval()'d code:3) in /home/vol11_5/infinityfree.com/if0_39271998/htdocs/wp-content/plugins/insert-headers-and-footers/includes/class-wpcode-snippet-execute.php(419) : eval()'d code on line 3
+
+2025-06-22T21:16:12+00:00 CRITICAL Maximum execution time of 60 seconds exceeded in /home/vol11_5/infinityfree.com/if0_39271998/htdocs/wp-content/plugins/wp-file-manager/lib/php/elFinderVolumeLocalFileSystem.class.php on line 791
+
+2025-06-22T21:16:12+00:00 CRITICAL Maximum execution time of 60 seconds exceeded in /home/vol11_5/infinityfree.com/if0_39271998/htdocs/wp-content/plugins/wp-file-manager/lib/php/elFinderVolumeLocalFileSystem.class.php on line 791
+
+2025-06-22T21:16:12+00:00 CRITICAL Maximum execution time of 60 seconds exceeded in /home/vol11_5/infinityfree.com/if0_39271998/htdocs/wp-content/plugins/wp-file-manager/lib/php/elFinderVolumeLocalFileSystem.class.php on line 791
+
+2025-06-22T21:31:22+00:00 CRITICAL Maximum execution time of 60 seconds exceeded in /home/vol11_5/infinityfree.com/if0_39271998/htdocs/wp-content/plugins/wp-file-manager/lib/php/elFinderVolumeDriver.class.php on line 7251
+
+2025-06-22T21:31:22+00:00 CRITICAL Maximum execution time of 60 seconds exceeded in /home/vol11_5/infinityfree.com/if0_39271998/htdocs/wp-content/plugins/wp-file-manager/lib/php/elFinderVolumeDriver.class.php on line 7251
+
+2025-06-22T21:31:22+00:00 CRITICAL Maximum execution time of 60 seconds exceeded in /home/vol11_5/infinityfree.com/if0_39271998/htdocs/wp-content/plugins/wp-file-manager/lib/php/elFinderVolumeDriver.class.php on line 7251
+
+2025-06-22T21:35:56+00:00 CRITICAL Maximum execution time of 60 seconds exceeded in /home/vol11_5/infinityfree.com/if0_39271998/htdocs/wp-content/plugins/wp-file-manager/lib/php/elFinderVolumeLocalFileSystem.class.php on line 370
+
+2025-06-22T21:35:56+00:00 CRITICAL Maximum execution time of 60 seconds exceeded in /home/vol11_5/infinityfree.com/if0_39271998/htdocs/wp-content/plugins/wp-file-manager/lib/php/elFinderVolumeLocalFileSystem.class.php on line 370
+
+2025-06-22T21:35:56+00:00 CRITICAL Maximum execution time of 60 seconds exceeded in /home/vol11_5/infinityfree.com/if0_39271998/htdocs/wp-content/plugins/wp-file-manager/lib/php/elFinderVolumeLocalFileSystem.class.php on line 370
+
+2025-06-23T10:05:21+00:00 CRITICAL Uncaught RuntimeException: Unable to claim actions. Database error. in C:\xampp\htdocs\htdocs\wp-content\plugins\ultimate-member\includes\lib\action-scheduler\classes\data-stores\ActionScheduler_wpPostStore.php:696
+Stack trace:
+#0 C:\xampp\htdocs\htdocs\wp-content\plugins\ultimate-member\includes\lib\action-scheduler\classes\data-stores\ActionScheduler_wpPostStore.php(588): ActionScheduler_wpPostStore->claim_actions('ec0f14a31d072c8...', 25, NULL, Array, '')
+#1 C:\xampp\htdocs\htdocs\wp-content\plugins\ultimate-member\includes\lib\action-scheduler\classes\data-stores\ActionScheduler_HybridStore.php(244): ActionScheduler_wpPostStore->stake_claim(25, NULL, Array, '')
+#2 C:\xampp\htdocs\htdocs\wp-content\plugins\ultimate-member\includes\lib\action-scheduler\classes\ActionScheduler_QueueRunner.php(179): ActionScheduler_HybridStore->stake_claim(25)
+#3 C:\xampp\htdocs\htdocs\wp-content\plugins\ultimate-member\includes\lib\action-scheduler\classes\ActionScheduler_QueueRunner.php(158): ActionScheduler_QueueRunner->do_batch(25, 'WP Cron')
+#4 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(324): ActionScheduler_QueueRunner->run('WP Cron')
+#5 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp\htdocs\htdocs\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#7 C:\xampp\htdocs\htdocs\wp-cron.php(191): do_action_ref_array('action_schedule...', Array)
+#8 {main}
+  thrown in C:\xampp\htdocs\htdocs\wp-content\plugins\ultimate-member\includes\lib\action-scheduler\classes\data-stores\ActionScheduler_wpPostStore.php on line 696
+
+2025-06-23T10:05:21+00:00 CRITICAL Uncaught RuntimeException: Unable to claim actions. Database error. in C:\xampp\htdocs\htdocs\wp-content\plugins\ultimate-member\includes\lib\action-scheduler\classes\data-stores\ActionScheduler_wpPostStore.php:696
+Stack trace:
+#0 C:\xampp\htdocs\htdocs\wp-content\plugins\ultimate-member\includes\lib\action-scheduler\classes\data-stores\ActionScheduler_wpPostStore.php(588): ActionScheduler_wpPostStore->claim_actions('ec0f14a31d072c8...', 25, NULL, Array, '')
+#1 C:\xampp\htdocs\htdocs\wp-content\plugins\ultimate-member\includes\lib\action-scheduler\classes\data-stores\ActionScheduler_HybridStore.php(244): ActionScheduler_wpPostStore->stake_claim(25, NULL, Array, '')
+#2 C:\xampp\htdocs\htdocs\wp-content\plugins\ultimate-member\includes\lib\action-scheduler\classes\ActionScheduler_QueueRunner.php(179): ActionScheduler_HybridStore->stake_claim(25)
+#3 C:\xampp\htdocs\htdocs\wp-content\plugins\ultimate-member\includes\lib\action-scheduler\classes\ActionScheduler_QueueRunner.php(158): ActionScheduler_QueueRunner->do_batch(25, 'WP Cron')
+#4 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(324): ActionScheduler_QueueRunner->run('WP Cron')
+#5 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp\htdocs\htdocs\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#7 C:\xampp\htdocs\htdocs\wp-cron.php(191): do_action_ref_array('action_schedule...', Array)
+#8 {main}
+  thrown in C:\xampp\htdocs\htdocs\wp-content\plugins\ultimate-member\includes\lib\action-scheduler\classes\data-stores\ActionScheduler_wpPostStore.php on line 696
+
+2025-06-23T10:05:21+00:00 CRITICAL Uncaught RuntimeException: Unable to claim actions. Database error. in C:\xampp\htdocs\htdocs\wp-content\plugins\ultimate-member\includes\lib\action-scheduler\classes\data-stores\ActionScheduler_wpPostStore.php:696
+Stack trace:
+#0 C:\xampp\htdocs\htdocs\wp-content\plugins\ultimate-member\includes\lib\action-scheduler\classes\data-stores\ActionScheduler_wpPostStore.php(588): ActionScheduler_wpPostStore->claim_actions('ec0f14a31d072c8...', 25, NULL, Array, '')
+#1 C:\xampp\htdocs\htdocs\wp-content\plugins\ultimate-member\includes\lib\action-scheduler\classes\data-stores\ActionScheduler_HybridStore.php(244): ActionScheduler_wpPostStore->stake_claim(25, NULL, Array, '')
+#2 C:\xampp\htdocs\htdocs\wp-content\plugins\ultimate-member\includes\lib\action-scheduler\classes\ActionScheduler_QueueRunner.php(179): ActionScheduler_HybridStore->stake_claim(25)
+#3 C:\xampp\htdocs\htdocs\wp-content\plugins\ultimate-member\includes\lib\action-scheduler\classes\ActionScheduler_QueueRunner.php(158): ActionScheduler_QueueRunner->do_batch(25, 'WP Cron')
+#4 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(324): ActionScheduler_QueueRunner->run('WP Cron')
+#5 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp\htdocs\htdocs\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#7 C:\xampp\htdocs\htdocs\wp-cron.php(191): do_action_ref_array('action_schedule...', Array)
+#8 {main}
+  thrown in C:\xampp\htdocs\htdocs\wp-content\plugins\ultimate-member\includes\lib\action-scheduler\classes\data-stores\ActionScheduler_wpPostStore.php on line 696
+
+2025-06-23T10:05:23+00:00 CRITICAL Uncaught RuntimeException: Unable to claim actions. Database error. in C:\xampp\htdocs\htdocs\wp-content\plugins\ultimate-member\includes\lib\action-scheduler\classes\data-stores\ActionScheduler_wpPostStore.php:696
+Stack trace:
+#0 C:\xampp\htdocs\htdocs\wp-content\plugins\ultimate-member\includes\lib\action-scheduler\classes\data-stores\ActionScheduler_wpPostStore.php(588): ActionScheduler_wpPostStore->claim_actions('05d93780ef69abd...', 25, NULL, Array, '')
+#1 C:\xampp\htdocs\htdocs\wp-content\plugins\ultimate-member\includes\lib\action-scheduler\classes\data-stores\ActionScheduler_HybridStore.php(244): ActionScheduler_wpPostStore->stake_claim(25, NULL, Array, '')
+#2 C:\xampp\htdocs\htdocs\wp-content\plugins\ultimate-member\includes\lib\action-scheduler\classes\ActionScheduler_QueueRunner.php(179): ActionScheduler_HybridStore->stake_claim(25)
+#3 C:\xampp\htdocs\htdocs\wp-content\plugins\ultimate-member\includes\lib\action-scheduler\classes\ActionScheduler_QueueRunner.php(158): ActionScheduler_QueueRunner->do_batch(25, 'Async Request')
+#4 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(324): ActionScheduler_QueueRunner->run('Async Request')
+#5 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp\htdocs\htdocs\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp\htdocs\htdocs\wp-content\plugins\ultimate-member\includes\lib\action-scheduler\classes\ActionScheduler_AsyncRequest_QueueRunner.php(48): do_action('action_schedule...', 'Async Request')
+#8 C:\xampp\htdocs\htdocs\wp-content\plugins\learnpress\inc\libraries\wp-background-process\classes\wp-async-request.php(176): ActionScheduler_AsyncRequest_QueueRunner->handle()
+#9 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(324): WP_Async_Request->maybe_handle('')
+#10 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#11 C:\xampp\htdocs\htdocs\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#12 C:\xampp\htdocs\htdocs\wp-admin\admin-ajax.php(207): do_action('wp_ajax_nopriv_...')
+#13 {main}
+  thrown in C:\xampp\htdocs\htdocs\wp-content\plugins\ultimate-member\includes\lib\action-scheduler\classes\data-stores\ActionScheduler_wpPostStore.php on line 696
+
+2025-06-23T10:05:23+00:00 CRITICAL Uncaught RuntimeException: Unable to claim actions. Database error. in C:\xampp\htdocs\htdocs\wp-content\plugins\ultimate-member\includes\lib\action-scheduler\classes\data-stores\ActionScheduler_wpPostStore.php:696
+Stack trace:
+#0 C:\xampp\htdocs\htdocs\wp-content\plugins\ultimate-member\includes\lib\action-scheduler\classes\data-stores\ActionScheduler_wpPostStore.php(588): ActionScheduler_wpPostStore->claim_actions('05d93780ef69abd...', 25, NULL, Array, '')
+#1 C:\xampp\htdocs\htdocs\wp-content\plugins\ultimate-member\includes\lib\action-scheduler\classes\data-stores\ActionScheduler_HybridStore.php(244): ActionScheduler_wpPostStore->stake_claim(25, NULL, Array, '')
+#2 C:\xampp\htdocs\htdocs\wp-content\plugins\ultimate-member\includes\lib\action-scheduler\classes\ActionScheduler_QueueRunner.php(179): ActionScheduler_HybridStore->stake_claim(25)
+#3 C:\xampp\htdocs\htdocs\wp-content\plugins\ultimate-member\includes\lib\action-scheduler\classes\ActionScheduler_QueueRunner.php(158): ActionScheduler_QueueRunner->do_batch(25, 'Async Request')
+#4 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(324): ActionScheduler_QueueRunner->run('Async Request')
+#5 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp\htdocs\htdocs\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp\htdocs\htdocs\wp-content\plugins\ultimate-member\includes\lib\action-scheduler\classes\ActionScheduler_AsyncRequest_QueueRunner.php(48): do_action('action_schedule...', 'Async Request')
+#8 C:\xampp\htdocs\htdocs\wp-content\plugins\learnpress\inc\libraries\wp-background-process\classes\wp-async-request.php(176): ActionScheduler_AsyncRequest_QueueRunner->handle()
+#9 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(324): WP_Async_Request->maybe_handle('')
+#10 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#11 C:\xampp\htdocs\htdocs\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#12 C:\xampp\htdocs\htdocs\wp-admin\admin-ajax.php(207): do_action('wp_ajax_nopriv_...')
+#13 {main}
+  thrown in C:\xampp\htdocs\htdocs\wp-content\plugins\ultimate-member\includes\lib\action-scheduler\classes\data-stores\ActionScheduler_wpPostStore.php on line 696
+
+2025-06-23T10:05:23+00:00 CRITICAL Uncaught RuntimeException: Unable to claim actions. Database error. in C:\xampp\htdocs\htdocs\wp-content\plugins\ultimate-member\includes\lib\action-scheduler\classes\data-stores\ActionScheduler_wpPostStore.php:696
+Stack trace:
+#0 C:\xampp\htdocs\htdocs\wp-content\plugins\ultimate-member\includes\lib\action-scheduler\classes\data-stores\ActionScheduler_wpPostStore.php(588): ActionScheduler_wpPostStore->claim_actions('05d93780ef69abd...', 25, NULL, Array, '')
+#1 C:\xampp\htdocs\htdocs\wp-content\plugins\ultimate-member\includes\lib\action-scheduler\classes\data-stores\ActionScheduler_HybridStore.php(244): ActionScheduler_wpPostStore->stake_claim(25, NULL, Array, '')
+#2 C:\xampp\htdocs\htdocs\wp-content\plugins\ultimate-member\includes\lib\action-scheduler\classes\ActionScheduler_QueueRunner.php(179): ActionScheduler_HybridStore->stake_claim(25)
+#3 C:\xampp\htdocs\htdocs\wp-content\plugins\ultimate-member\includes\lib\action-scheduler\classes\ActionScheduler_QueueRunner.php(158): ActionScheduler_QueueRunner->do_batch(25, 'Async Request')
+#4 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(324): ActionScheduler_QueueRunner->run('Async Request')
+#5 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp\htdocs\htdocs\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp\htdocs\htdocs\wp-content\plugins\ultimate-member\includes\lib\action-scheduler\classes\ActionScheduler_AsyncRequest_QueueRunner.php(48): do_action('action_schedule...', 'Async Request')
+#8 C:\xampp\htdocs\htdocs\wp-content\plugins\learnpress\inc\libraries\wp-background-process\classes\wp-async-request.php(176): ActionScheduler_AsyncRequest_QueueRunner->handle()
+#9 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(324): WP_Async_Request->maybe_handle('')
+#10 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#11 C:\xampp\htdocs\htdocs\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#12 C:\xampp\htdocs\htdocs\wp-admin\admin-ajax.php(207): do_action('wp_ajax_nopriv_...')
+#13 {main}
+  thrown in C:\xampp\htdocs\htdocs\wp-content\plugins\ultimate-member\includes\lib\action-scheduler\classes\data-stores\ActionScheduler_wpPostStore.php on line 696
+
+2025-06-23T10:06:46+00:00 CRITICAL Uncaught RuntimeException: Unable to claim actions. Database error. in C:\xampp\htdocs\htdocs\wp-content\plugins\ultimate-member\includes\lib\action-scheduler\classes\data-stores\ActionScheduler_wpPostStore.php:696
+Stack trace:
+#0 C:\xampp\htdocs\htdocs\wp-content\plugins\ultimate-member\includes\lib\action-scheduler\classes\data-stores\ActionScheduler_wpPostStore.php(588): ActionScheduler_wpPostStore->claim_actions('8d3413d0ca1aa2c...', 25, NULL, Array, '')
+#1 C:\xampp\htdocs\htdocs\wp-content\plugins\ultimate-member\includes\lib\action-scheduler\classes\data-stores\ActionScheduler_HybridStore.php(244): ActionScheduler_wpPostStore->stake_claim(25, NULL, Array, '')
+#2 C:\xampp\htdocs\htdocs\wp-content\plugins\ultimate-member\includes\lib\action-scheduler\classes\ActionScheduler_QueueRunner.php(179): ActionScheduler_HybridStore->stake_claim(25)
+#3 C:\xampp\htdocs\htdocs\wp-content\plugins\ultimate-member\includes\lib\action-scheduler\classes\ActionScheduler_QueueRunner.php(158): ActionScheduler_QueueRunner->do_batch(25, 'WP Cron')
+#4 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(324): ActionScheduler_QueueRunner->run('WP Cron')
+#5 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp\htdocs\htdocs\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#7 C:\xampp\htdocs\htdocs\wp-cron.php(191): do_action_ref_array('action_schedule...', Array)
+#8 {main}
+  thrown in C:\xampp\htdocs\htdocs\wp-content\plugins\ultimate-member\includes\lib\action-scheduler\classes\data-stores\ActionScheduler_wpPostStore.php on line 696
+
+2025-06-23T10:06:46+00:00 CRITICAL Uncaught RuntimeException: Unable to claim actions. Database error. in C:\xampp\htdocs\htdocs\wp-content\plugins\ultimate-member\includes\lib\action-scheduler\classes\data-stores\ActionScheduler_wpPostStore.php:696
+Stack trace:
+#0 C:\xampp\htdocs\htdocs\wp-content\plugins\ultimate-member\includes\lib\action-scheduler\classes\data-stores\ActionScheduler_wpPostStore.php(588): ActionScheduler_wpPostStore->claim_actions('8d3413d0ca1aa2c...', 25, NULL, Array, '')
+#1 C:\xampp\htdocs\htdocs\wp-content\plugins\ultimate-member\includes\lib\action-scheduler\classes\data-stores\ActionScheduler_HybridStore.php(244): ActionScheduler_wpPostStore->stake_claim(25, NULL, Array, '')
+#2 C:\xampp\htdocs\htdocs\wp-content\plugins\ultimate-member\includes\lib\action-scheduler\classes\ActionScheduler_QueueRunner.php(179): ActionScheduler_HybridStore->stake_claim(25)
+#3 C:\xampp\htdocs\htdocs\wp-content\plugins\ultimate-member\includes\lib\action-scheduler\classes\ActionScheduler_QueueRunner.php(158): ActionScheduler_QueueRunner->do_batch(25, 'WP Cron')
+#4 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(324): ActionScheduler_QueueRunner->run('WP Cron')
+#5 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp\htdocs\htdocs\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#7 C:\xampp\htdocs\htdocs\wp-cron.php(191): do_action_ref_array('action_schedule...', Array)
+#8 {main}
+  thrown in C:\xampp\htdocs\htdocs\wp-content\plugins\ultimate-member\includes\lib\action-scheduler\classes\data-stores\ActionScheduler_wpPostStore.php on line 696
+
+2025-06-23T10:06:46+00:00 CRITICAL Uncaught RuntimeException: Unable to claim actions. Database error. in C:\xampp\htdocs\htdocs\wp-content\plugins\ultimate-member\includes\lib\action-scheduler\classes\data-stores\ActionScheduler_wpPostStore.php:696
+Stack trace:
+#0 C:\xampp\htdocs\htdocs\wp-content\plugins\ultimate-member\includes\lib\action-scheduler\classes\data-stores\ActionScheduler_wpPostStore.php(588): ActionScheduler_wpPostStore->claim_actions('8d3413d0ca1aa2c...', 25, NULL, Array, '')
+#1 C:\xampp\htdocs\htdocs\wp-content\plugins\ultimate-member\includes\lib\action-scheduler\classes\data-stores\ActionScheduler_HybridStore.php(244): ActionScheduler_wpPostStore->stake_claim(25, NULL, Array, '')
+#2 C:\xampp\htdocs\htdocs\wp-content\plugins\ultimate-member\includes\lib\action-scheduler\classes\ActionScheduler_QueueRunner.php(179): ActionScheduler_HybridStore->stake_claim(25)
+#3 C:\xampp\htdocs\htdocs\wp-content\plugins\ultimate-member\includes\lib\action-scheduler\classes\ActionScheduler_QueueRunner.php(158): ActionScheduler_QueueRunner->do_batch(25, 'WP Cron')
+#4 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(324): ActionScheduler_QueueRunner->run('WP Cron')
+#5 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp\htdocs\htdocs\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#7 C:\xampp\htdocs\htdocs\wp-cron.php(191): do_action_ref_array('action_schedule...', Array)
+#8 {main}
+  thrown in C:\xampp\htdocs\htdocs\wp-content\plugins\ultimate-member\includes\lib\action-scheduler\classes\data-stores\ActionScheduler_wpPostStore.php on line 696
+
+2025-06-23T10:52:20+00:00 CRITICAL Uncaught TypeError: array_intersect_key(): Argument #1 ($array) must be of type array, bool given in C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Options_V2.php:137
+Stack trace:
+#0 C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Options_V2.php(137): array_intersect_key(false, Array)
+#1 C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Assets.php(155): Tutor\Options_V2::get_only(Array)
+#2 C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Assets.php(461): TUTOR\Assets->get_default_localized_data()
+#3 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(324): TUTOR\Assets->load_meta_data('')
+#4 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#5 C:\xampp\htdocs\htdocs\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\htdocs\wp-includes\script-loader.php(2299): do_action('wp_enqueue_scri...')
+#7 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(324): wp_enqueue_scripts('')
+#8 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#9 C:\xampp\htdocs\htdocs\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#10 C:\xampp\htdocs\htdocs\wp-includes\general-template.php(3192): do_action('wp_head')
+#11 C:\xampp\htdocs\htdocs\wp-includes\template-canvas.php(17): wp_head()
+#12 C:\xampp\htdocs\htdocs\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\htdocs\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#14 C:\xampp\htdocs\htdocs\index.php(17): require('C:\\xampp\\htdocs...')
+#15 {main}
+  thrown in C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Options_V2.php on line 137
+
+2025-06-23T10:52:20+00:00 CRITICAL Uncaught TypeError: array_intersect_key(): Argument #1 ($array) must be of type array, bool given in C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Options_V2.php:137
+Stack trace:
+#0 C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Options_V2.php(137): array_intersect_key(false, Array)
+#1 C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Assets.php(155): Tutor\Options_V2::get_only(Array)
+#2 C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Assets.php(461): TUTOR\Assets->get_default_localized_data()
+#3 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(324): TUTOR\Assets->load_meta_data('')
+#4 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#5 C:\xampp\htdocs\htdocs\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\htdocs\wp-includes\script-loader.php(2299): do_action('wp_enqueue_scri...')
+#7 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(324): wp_enqueue_scripts('')
+#8 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#9 C:\xampp\htdocs\htdocs\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#10 C:\xampp\htdocs\htdocs\wp-includes\general-template.php(3192): do_action('wp_head')
+#11 C:\xampp\htdocs\htdocs\wp-includes\template-canvas.php(17): wp_head()
+#12 C:\xampp\htdocs\htdocs\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\htdocs\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#14 C:\xampp\htdocs\htdocs\index.php(17): require('C:\\xampp\\htdocs...')
+#15 {main}
+  thrown in C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Options_V2.php on line 137
+
+2025-06-23T10:52:20+00:00 CRITICAL Uncaught TypeError: array_intersect_key(): Argument #1 ($array) must be of type array, bool given in C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Options_V2.php:137
+Stack trace:
+#0 C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Options_V2.php(137): array_intersect_key(false, Array)
+#1 C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Assets.php(155): Tutor\Options_V2::get_only(Array)
+#2 C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Assets.php(461): TUTOR\Assets->get_default_localized_data()
+#3 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(324): TUTOR\Assets->load_meta_data('')
+#4 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#5 C:\xampp\htdocs\htdocs\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\htdocs\wp-includes\script-loader.php(2299): do_action('wp_enqueue_scri...')
+#7 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(324): wp_enqueue_scripts('')
+#8 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#9 C:\xampp\htdocs\htdocs\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#10 C:\xampp\htdocs\htdocs\wp-includes\general-template.php(3192): do_action('wp_head')
+#11 C:\xampp\htdocs\htdocs\wp-includes\template-canvas.php(17): wp_head()
+#12 C:\xampp\htdocs\htdocs\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\htdocs\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#14 C:\xampp\htdocs\htdocs\index.php(17): require('C:\\xampp\\htdocs...')
+#15 {main}
+  thrown in C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Options_V2.php on line 137
+
+2025-06-23T10:52:36+00:00 CRITICAL Uncaught TypeError: array_intersect_key(): Argument #1 ($array) must be of type array, bool given in C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Options_V2.php:137
+Stack trace:
+#0 C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Options_V2.php(137): array_intersect_key(false, Array)
+#1 C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Assets.php(155): Tutor\Options_V2::get_only(Array)
+#2 C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Assets.php(461): TUTOR\Assets->get_default_localized_data()
+#3 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(324): TUTOR\Assets->load_meta_data('')
+#4 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#5 C:\xampp\htdocs\htdocs\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\htdocs\wp-includes\script-loader.php(2299): do_action('wp_enqueue_scri...')
+#7 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(324): wp_enqueue_scripts('')
+#8 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#9 C:\xampp\htdocs\htdocs\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#10 C:\xampp\htdocs\htdocs\wp-includes\general-template.php(3192): do_action('wp_head')
+#11 C:\xampp\htdocs\htdocs\wp-includes\template-canvas.php(17): wp_head()
+#12 C:\xampp\htdocs\htdocs\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\htdocs\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#14 C:\xampp\htdocs\htdocs\index.php(17): require('C:\\xampp\\htdocs...')
+#15 {main}
+  thrown in C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Options_V2.php on line 137
+
+2025-06-23T10:52:36+00:00 CRITICAL Uncaught TypeError: array_intersect_key(): Argument #1 ($array) must be of type array, bool given in C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Options_V2.php:137
+Stack trace:
+#0 C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Options_V2.php(137): array_intersect_key(false, Array)
+#1 C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Assets.php(155): Tutor\Options_V2::get_only(Array)
+#2 C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Assets.php(461): TUTOR\Assets->get_default_localized_data()
+#3 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(324): TUTOR\Assets->load_meta_data('')
+#4 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#5 C:\xampp\htdocs\htdocs\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\htdocs\wp-includes\script-loader.php(2299): do_action('wp_enqueue_scri...')
+#7 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(324): wp_enqueue_scripts('')
+#8 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#9 C:\xampp\htdocs\htdocs\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#10 C:\xampp\htdocs\htdocs\wp-includes\general-template.php(3192): do_action('wp_head')
+#11 C:\xampp\htdocs\htdocs\wp-includes\template-canvas.php(17): wp_head()
+#12 C:\xampp\htdocs\htdocs\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\htdocs\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#14 C:\xampp\htdocs\htdocs\index.php(17): require('C:\\xampp\\htdocs...')
+#15 {main}
+  thrown in C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Options_V2.php on line 137
+
+2025-06-23T10:52:36+00:00 CRITICAL Uncaught TypeError: array_intersect_key(): Argument #1 ($array) must be of type array, bool given in C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Options_V2.php:137
+Stack trace:
+#0 C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Options_V2.php(137): array_intersect_key(false, Array)
+#1 C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Assets.php(155): Tutor\Options_V2::get_only(Array)
+#2 C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Assets.php(461): TUTOR\Assets->get_default_localized_data()
+#3 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(324): TUTOR\Assets->load_meta_data('')
+#4 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#5 C:\xampp\htdocs\htdocs\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\htdocs\wp-includes\script-loader.php(2299): do_action('wp_enqueue_scri...')
+#7 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(324): wp_enqueue_scripts('')
+#8 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#9 C:\xampp\htdocs\htdocs\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#10 C:\xampp\htdocs\htdocs\wp-includes\general-template.php(3192): do_action('wp_head')
+#11 C:\xampp\htdocs\htdocs\wp-includes\template-canvas.php(17): wp_head()
+#12 C:\xampp\htdocs\htdocs\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\htdocs\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#14 C:\xampp\htdocs\htdocs\index.php(17): require('C:\\xampp\\htdocs...')
+#15 {main}
+  thrown in C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Options_V2.php on line 137
+
+2025-06-23T10:52:39+00:00 CRITICAL Uncaught TypeError: array_intersect_key(): Argument #1 ($array) must be of type array, bool given in C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Options_V2.php:137
+Stack trace:
+#0 C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Options_V2.php(137): array_intersect_key(false, Array)
+#1 C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Assets.php(155): Tutor\Options_V2::get_only(Array)
+#2 C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Assets.php(461): TUTOR\Assets->get_default_localized_data()
+#3 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(324): TUTOR\Assets->load_meta_data('')
+#4 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#5 C:\xampp\htdocs\htdocs\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\htdocs\wp-includes\script-loader.php(2299): do_action('wp_enqueue_scri...')
+#7 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(324): wp_enqueue_scripts('')
+#8 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#9 C:\xampp\htdocs\htdocs\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#10 C:\xampp\htdocs\htdocs\wp-includes\general-template.php(3192): do_action('wp_head')
+#11 C:\xampp\htdocs\htdocs\wp-includes\template-canvas.php(17): wp_head()
+#12 C:\xampp\htdocs\htdocs\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\htdocs\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#14 C:\xampp\htdocs\htdocs\index.php(17): require('C:\\xampp\\htdocs...')
+#15 {main}
+  thrown in C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Options_V2.php on line 137
+
+2025-06-23T10:52:39+00:00 CRITICAL Uncaught TypeError: array_intersect_key(): Argument #1 ($array) must be of type array, bool given in C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Options_V2.php:137
+Stack trace:
+#0 C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Options_V2.php(137): array_intersect_key(false, Array)
+#1 C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Assets.php(155): Tutor\Options_V2::get_only(Array)
+#2 C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Assets.php(461): TUTOR\Assets->get_default_localized_data()
+#3 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(324): TUTOR\Assets->load_meta_data('')
+#4 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#5 C:\xampp\htdocs\htdocs\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\htdocs\wp-includes\script-loader.php(2299): do_action('wp_enqueue_scri...')
+#7 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(324): wp_enqueue_scripts('')
+#8 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#9 C:\xampp\htdocs\htdocs\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#10 C:\xampp\htdocs\htdocs\wp-includes\general-template.php(3192): do_action('wp_head')
+#11 C:\xampp\htdocs\htdocs\wp-includes\template-canvas.php(17): wp_head()
+#12 C:\xampp\htdocs\htdocs\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\htdocs\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#14 C:\xampp\htdocs\htdocs\index.php(17): require('C:\\xampp\\htdocs...')
+#15 {main}
+  thrown in C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Options_V2.php on line 137
+
+2025-06-23T10:52:39+00:00 CRITICAL Uncaught TypeError: array_intersect_key(): Argument #1 ($array) must be of type array, bool given in C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Options_V2.php:137
+Stack trace:
+#0 C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Options_V2.php(137): array_intersect_key(false, Array)
+#1 C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Assets.php(155): Tutor\Options_V2::get_only(Array)
+#2 C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Assets.php(461): TUTOR\Assets->get_default_localized_data()
+#3 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(324): TUTOR\Assets->load_meta_data('')
+#4 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#5 C:\xampp\htdocs\htdocs\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\htdocs\wp-includes\script-loader.php(2299): do_action('wp_enqueue_scri...')
+#7 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(324): wp_enqueue_scripts('')
+#8 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#9 C:\xampp\htdocs\htdocs\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#10 C:\xampp\htdocs\htdocs\wp-includes\general-template.php(3192): do_action('wp_head')
+#11 C:\xampp\htdocs\htdocs\wp-includes\template-canvas.php(17): wp_head()
+#12 C:\xampp\htdocs\htdocs\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\htdocs\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#14 C:\xampp\htdocs\htdocs\index.php(17): require('C:\\xampp\\htdocs...')
+#15 {main}
+  thrown in C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Options_V2.php on line 137
+
+2025-06-23T10:52:42+00:00 CRITICAL Uncaught TypeError: array_intersect_key(): Argument #1 ($array) must be of type array, bool given in C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Options_V2.php:137
+Stack trace:
+#0 C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Options_V2.php(137): array_intersect_key(false, Array)
+#1 C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Assets.php(155): Tutor\Options_V2::get_only(Array)
+#2 C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Assets.php(461): TUTOR\Assets->get_default_localized_data()
+#3 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(324): TUTOR\Assets->load_meta_data('')
+#4 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#5 C:\xampp\htdocs\htdocs\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\htdocs\wp-includes\script-loader.php(2299): do_action('wp_enqueue_scri...')
+#7 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(324): wp_enqueue_scripts('')
+#8 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#9 C:\xampp\htdocs\htdocs\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#10 C:\xampp\htdocs\htdocs\wp-includes\general-template.php(3192): do_action('wp_head')
+#11 C:\xampp\htdocs\htdocs\wp-includes\template-canvas.php(17): wp_head()
+#12 C:\xampp\htdocs\htdocs\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\htdocs\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#14 C:\xampp\htdocs\htdocs\index.php(17): require('C:\\xampp\\htdocs...')
+#15 {main}
+  thrown in C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Options_V2.php on line 137
+
+2025-06-23T10:52:42+00:00 CRITICAL Uncaught TypeError: array_intersect_key(): Argument #1 ($array) must be of type array, bool given in C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Options_V2.php:137
+Stack trace:
+#0 C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Options_V2.php(137): array_intersect_key(false, Array)
+#1 C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Assets.php(155): Tutor\Options_V2::get_only(Array)
+#2 C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Assets.php(461): TUTOR\Assets->get_default_localized_data()
+#3 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(324): TUTOR\Assets->load_meta_data('')
+#4 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#5 C:\xampp\htdocs\htdocs\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\htdocs\wp-includes\script-loader.php(2299): do_action('wp_enqueue_scri...')
+#7 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(324): wp_enqueue_scripts('')
+#8 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#9 C:\xampp\htdocs\htdocs\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#10 C:\xampp\htdocs\htdocs\wp-includes\general-template.php(3192): do_action('wp_head')
+#11 C:\xampp\htdocs\htdocs\wp-includes\template-canvas.php(17): wp_head()
+#12 C:\xampp\htdocs\htdocs\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\htdocs\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#14 C:\xampp\htdocs\htdocs\index.php(17): require('C:\\xampp\\htdocs...')
+#15 {main}
+  thrown in C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Options_V2.php on line 137
+
+2025-06-23T10:52:42+00:00 CRITICAL Uncaught TypeError: array_intersect_key(): Argument #1 ($array) must be of type array, bool given in C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Options_V2.php:137
+Stack trace:
+#0 C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Options_V2.php(137): array_intersect_key(false, Array)
+#1 C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Assets.php(155): Tutor\Options_V2::get_only(Array)
+#2 C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Assets.php(461): TUTOR\Assets->get_default_localized_data()
+#3 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(324): TUTOR\Assets->load_meta_data('')
+#4 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#5 C:\xampp\htdocs\htdocs\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\htdocs\wp-includes\script-loader.php(2299): do_action('wp_enqueue_scri...')
+#7 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(324): wp_enqueue_scripts('')
+#8 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#9 C:\xampp\htdocs\htdocs\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#10 C:\xampp\htdocs\htdocs\wp-includes\general-template.php(3192): do_action('wp_head')
+#11 C:\xampp\htdocs\htdocs\wp-includes\template-canvas.php(17): wp_head()
+#12 C:\xampp\htdocs\htdocs\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\htdocs\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#14 C:\xampp\htdocs\htdocs\index.php(17): require('C:\\xampp\\htdocs...')
+#15 {main}
+  thrown in C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Options_V2.php on line 137
+
+2025-06-23T10:52:53+00:00 CRITICAL Uncaught TypeError: array_intersect_key(): Argument #1 ($array) must be of type array, bool given in C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Options_V2.php:137
+Stack trace:
+#0 C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Options_V2.php(137): array_intersect_key(false, Array)
+#1 C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Assets.php(155): Tutor\Options_V2::get_only(Array)
+#2 C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Assets.php(461): TUTOR\Assets->get_default_localized_data()
+#3 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(324): TUTOR\Assets->load_meta_data('')
+#4 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#5 C:\xampp\htdocs\htdocs\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\htdocs\wp-includes\script-loader.php(2299): do_action('wp_enqueue_scri...')
+#7 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(324): wp_enqueue_scripts('')
+#8 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#9 C:\xampp\htdocs\htdocs\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#10 C:\xampp\htdocs\htdocs\wp-includes\general-template.php(3192): do_action('wp_head')
+#11 C:\xampp\htdocs\htdocs\wp-includes\template-canvas.php(17): wp_head()
+#12 C:\xampp\htdocs\htdocs\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\htdocs\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#14 C:\xampp\htdocs\htdocs\index.php(17): require('C:\\xampp\\htdocs...')
+#15 {main}
+  thrown in C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Options_V2.php on line 137
+
+2025-06-23T10:52:53+00:00 CRITICAL Uncaught TypeError: array_intersect_key(): Argument #1 ($array) must be of type array, bool given in C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Options_V2.php:137
+Stack trace:
+#0 C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Options_V2.php(137): array_intersect_key(false, Array)
+#1 C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Assets.php(155): Tutor\Options_V2::get_only(Array)
+#2 C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Assets.php(461): TUTOR\Assets->get_default_localized_data()
+#3 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(324): TUTOR\Assets->load_meta_data('')
+#4 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#5 C:\xampp\htdocs\htdocs\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\htdocs\wp-includes\script-loader.php(2299): do_action('wp_enqueue_scri...')
+#7 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(324): wp_enqueue_scripts('')
+#8 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#9 C:\xampp\htdocs\htdocs\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#10 C:\xampp\htdocs\htdocs\wp-includes\general-template.php(3192): do_action('wp_head')
+#11 C:\xampp\htdocs\htdocs\wp-includes\template-canvas.php(17): wp_head()
+#12 C:\xampp\htdocs\htdocs\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\htdocs\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#14 C:\xampp\htdocs\htdocs\index.php(17): require('C:\\xampp\\htdocs...')
+#15 {main}
+  thrown in C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Options_V2.php on line 137
+
+2025-06-23T10:52:53+00:00 CRITICAL Uncaught TypeError: array_intersect_key(): Argument #1 ($array) must be of type array, bool given in C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Options_V2.php:137
+Stack trace:
+#0 C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Options_V2.php(137): array_intersect_key(false, Array)
+#1 C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Assets.php(155): Tutor\Options_V2::get_only(Array)
+#2 C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Assets.php(461): TUTOR\Assets->get_default_localized_data()
+#3 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(324): TUTOR\Assets->load_meta_data('')
+#4 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#5 C:\xampp\htdocs\htdocs\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\htdocs\wp-includes\script-loader.php(2299): do_action('wp_enqueue_scri...')
+#7 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(324): wp_enqueue_scripts('')
+#8 C:\xampp\htdocs\htdocs\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#9 C:\xampp\htdocs\htdocs\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#10 C:\xampp\htdocs\htdocs\wp-includes\general-template.php(3192): do_action('wp_head')
+#11 C:\xampp\htdocs\htdocs\wp-includes\template-canvas.php(17): wp_head()
+#12 C:\xampp\htdocs\htdocs\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\htdocs\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#14 C:\xampp\htdocs\htdocs\index.php(17): require('C:\\xampp\\htdocs...')
+#15 {main}
+  thrown in C:\xampp\htdocs\htdocs\wp-content\plugins\tutor\classes\Options_V2.php on line 137
+

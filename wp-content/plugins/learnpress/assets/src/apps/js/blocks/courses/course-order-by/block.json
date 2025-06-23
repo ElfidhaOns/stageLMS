@@ -1,0 +1,20 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "learnpress/course-order-by",
+	"title": "Course Sorting",
+	"category": "learnpress-course-elements",
+	"icon": "editor-alignleft",
+	"description": "Show sorting select box for courses.",
+	"textdomain": "learnpress",
+	"keywords": ["sort", "learnpress"],
+	"usesContext": [ "lpCourseQuery" ],
+	"ancestor": [ "learnpress/list-courses" ],
+	"supports": {
+		"inserter": true,
+		"reusable": true,
+		"reorder": true,
+		"html": false,
+		"multiple": true
+	}
+}
