@@ -54,7 +54,7 @@ $placeholder_img = tutor()->url . 'assets/images/placeholder.svg';
 $current_user_id = get_current_user_id();
 
 // 🔗 Appel API Symfony pour récupérer les cours de l’instructeur connecté
-$response = wp_remote_get( 'https://backend-lms-lc89.onrender.com/api/cours/auteur/1'  );
+$response = wp_remote_get( 'http://localhost:8001/api/cours/auteur/1'  );
 
 ?>
 
