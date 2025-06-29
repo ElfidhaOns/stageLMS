@@ -1,61 +1,72 @@
 <?php
+require_once ABSPATH . 'wp-admin/includes/media.php';
+require_once ABSPATH . 'wp-admin/includes/file.php';
+require_once ABSPATH . 'wp-admin/includes/image.php';
+
 // 🔐 Gestion upload PDF/PPT
 if ( isset($_POST['upload_pdf_course']) && current_user_can('edit_posts') ) {
-    $title = sanitize_text_field( $_POST['course_title'] );
-    $file = $_FILES['course_file'];
+    $title       = sanitize_text_field( $_POST['course_title'] );
+    $price_type  = $_POST['course_price_type'] ?? 'free';
+    $price       = isset($_POST['course_price']) ? floatval($_POST['course_price']) : 0;
 
-    if ( ! empty( $file['name'] ) ) {
-        require_once( ABSPATH . 'wp-admin/includes/file.php' );
-        $uploaded = media_handle_upload( 'course_file', 0 );
+    $file_main   = $_FILES['course_file'];
+    $file_detail = $_FILES['course_detail_pdf'];
 
-        if ( ! is_wp_error( $uploaded ) ) {
-            $post_id = wp_insert_post( array(
-                'post_title'    => $title,
-                'post_status'   => 'publish',
-                'post_type'     => 'tutor_course',
-            ) );
+    $main_upload_id   = !empty($file_main['name'])   ? media_handle_upload( 'course_file', 0 ) : null;
+    $detail_upload_id = !empty($file_detail['name']) ? media_handle_upload( 'course_detail_pdf', 0 ) : null;
 
-            update_post_meta( $post_id, 'attached_course_file', $uploaded );
-            update_post_meta( $post_id, '_tutor_course_is_publishable', 'yes' );
+    if ( ! is_wp_error( $main_upload_id ) ) {
+        $post_id = wp_insert_post( array(
+            'post_title'    => $title,
+            'post_status'   => 'publish',
+            'post_type'     => 'tutor_course',
+        ) );
 
-            wp_update_post([
-                'ID' => $post_id,
-                'post_author' => get_current_user_id()
-            ]);
+        update_post_meta( $post_id, 'attached_course_file', $main_upload_id );
+        update_post_meta( $post_id, '_tutor_course_is_publishable', 'yes' );
+        update_post_meta( $post_id, '_tutor_course_status', 'publish' );
+        update_post_meta( $post_id, '_tutor_course_require_login', 'on' );
 
-            $section_id = tutor_utils()->create_section([
-                'course_id' => $post_id,
-                'title'     => 'Introduction',
-                'order'     => 1,
-            ]);
-
-            $lesson_id = wp_insert_post([
-                'post_title'  => 'Bienvenue',
-                'post_type'   => 'lesson',
-                'post_status' => 'publish',
-                'post_parent' => $post_id,
-            ]);
-
-            tutor_utils()->insert_lesson_to_section([
-                'lesson_id'  => $lesson_id,
-                'section_id' => $section_id,
-            ]);
-
-            wp_redirect( tutor_utils()->tutor_dashboard_url( 'my-courses' ) );
-            exit;
+        update_post_meta( $post_id, '_tutor_course_price_type', $price_type );
+        if ( $price_type === 'paid' ) {
+            update_post_meta( $post_id, '_tutor_course_price', $price );
         }
+
+        if ( $detail_upload_id && ! is_wp_error( $detail_upload_id ) ) {
+            update_field( 'pdf_du_cours', $detail_upload_id, $post_id );
+        }
+
+        wp_update_post([
+            'ID' => $post_id,
+            'post_author' => get_current_user_id()
+        ]);
+
+        $section_id = tutor_utils()->create_section([
+            'course_id' => $post_id,
+            'title'     => 'Introduction',
+            'order'     => 1,
+        ]);
+
+        $lesson_id = wp_insert_post([
+            'post_title'  => 'Bienvenue',
+            'post_type'   => 'lesson',
+            'post_status' => 'publish',
+            'post_parent' => $post_id,
+        ]);
+
+        tutor_utils()->insert_lesson_to_section([
+            'lesson_id'  => $lesson_id,
+            'section_id' => $section_id,
+        ]);
+
+        wp_redirect( add_query_arg( 'upload_success', '1', tutor_utils()->tutor_dashboard_url( 'my-courses' ) ) );
+        exit;
     }
 }
 
-// Image placeholder Tutor LMS
+// 🔧 Placeholder
 $placeholder_img = tutor()->url . 'assets/images/placeholder.svg';
-
-// 👨‍🏫 Récupérer l’ID utilisateur actuel
 $current_user_id = get_current_user_id();
-
-// 🔗 Appel API Symfony pour récupérer les cours de l’instructeur connecté
-$response = wp_remote_get( 'https://backend-lms-lc89.onrender.com/api/cours/auteur/1'  );
-
 ?>
 
 <div class="tutor-dashboard-my-courses">
@@ -67,7 +78,12 @@ $response = wp_remote_get( 'https://backend-lms-lc89.onrender.com/api/cours/aute
         Ici, vous pouvez gérer tous vos cours : modification, suppression, duplication ou publication.
     </div>
 
-    <!-- ➕ Bouton d'ajout de cours PDF -->
+    <?php if ( isset($_GET['upload_success']) && $_GET['upload_success'] == '1' ) : ?>
+        <div class="tutor-alert tutor-alert-success tutor-mb-16">
+            ✅ Le cours a été ajouté avec succès, fichier PDF bien enregistré.
+        </div>
+    <?php endif; ?>
+
     <div class="tutor-d-flex tutor-justify-end tutor-mb-16">
         <button class="tutor-btn tutor-btn-primary" onclick="document.getElementById('uploadCourseModal').style.display='block'">
             ➕ Nouveau cours PDF
@@ -80,8 +96,24 @@ $response = wp_remote_get( 'https://backend-lms-lc89.onrender.com/api/cours/aute
         <form method="post" enctype="multipart/form-data">
             <label>Titre du cours :</label>
             <input type="text" name="course_title" required style="width:100%; margin-bottom:10px; padding:5px;">
-            <label>Fichier PDF ou PPT :</label>
-            <input type="file" name="course_file" accept=".pdf,.ppt,.pptx" required style="margin-bottom:15px;">
+
+            <label>Fichier principal (PDF/PPT) :</label>
+            <input type="file" name="course_file" accept=".pdf,.ppt,.pptx" required style="margin-bottom:10px;">
+
+            <label>Type de cours :</label>
+            <select name="course_price_type" onchange="togglePriceField(this)" style="width:100%; margin-bottom:10px; padding:5px;">
+                <option value="free">Gratuit</option>
+                <option value="paid">Payant</option>
+            </select>
+
+            <div id="priceField" style="display:none;">
+                <label>Prix (€) :</label>
+                <input type="number" name="course_price" min="0" step="0.01" style="width:100%; margin-bottom:10px; padding:5px;">
+            </div>
+
+            <label>Détails PDF (optionnel) :</label>
+            <input type="file" name="course_detail_pdf" accept=".pdf" style="margin-bottom:15px;">
+
             <div style="display:flex; justify-content: space-between;">
                 <input type="submit" name="upload_pdf_course" value="📤 Télécharger" class="tutor-btn tutor-btn-primary">
                 <button type="button" class="tutor-btn tutor-btn-secondary" onclick="document.getElementById('uploadCourseModal').style.display='none'">❌ Fermer</button>
@@ -89,26 +121,13 @@ $response = wp_remote_get( 'https://backend-lms-lc89.onrender.com/api/cours/aute
         </form>
     </div>
 
-    <!-- 📡 Affichage des cours depuis l'API Symfony -->
-    <?php
-    if ( is_wp_error( $response ) ) {
-        echo '<div class="tutor-alert tutor-alert-error">❌ Erreur de connexion à l’API Symfony.</div>';
-    } else {
-        $coursApi = json_decode( wp_remote_retrieve_body( $response ) );
-        if ( ! empty( $coursApi ) ) {
-            echo '<div class="tutor-alert tutor-alert-success tutor-mb-16">📡 Cours depuis le backend Symfony :</div>';
-            echo '<ul style="margin-bottom:30px;">';
-            foreach ( $coursApi as $cours ) {
-                echo '<li><strong>' . esc_html( $cours->title ) . '</strong><br>📝 ' . esc_html( $cours->description ) . '</li><hr>';
-            }
-            echo '</ul>';
-        } else {
-            echo '<div class="tutor-alert tutor-alert-warning">⚠️ Aucun cours trouvé via l’API Symfony.</div>';
-        }
+    <script>
+    function togglePriceField(select) {
+        document.getElementById('priceField').style.display = select.value === 'paid' ? 'block' : 'none';
     }
-    ?>
+    </script>
 
-    <!-- 🔥 Récupération des cours WordPress natifs -->
+    <!-- 🔥 Cours WordPress -->
     <?php
     $args = [
         'post_type'      => 'tutor_course',
@@ -123,7 +142,6 @@ $response = wp_remote_get( 'https://backend-lms-lc89.onrender.com/api/cours/aute
     }
     ?>
 
-    <!-- 🗂️ Affichage des cours WordPress -->
     <div class="tutor-dashboard-content-inner">
         <div class="tutor-grid tutor-grid-3">
             <?php
@@ -133,15 +151,16 @@ $response = wp_remote_get( 'https://backend-lms-lc89.onrender.com/api/cours/aute
 
                 $tutor_course_img = get_tutor_course_thumbnail_src();
                 $course_edit_link = tutor_utils()->course_edit_link( $post->ID );
-
                 $chapters = tutor_utils()->get_sections_by_course_id( $post->ID );
                 $chapter_count = is_array( $chapters ) ? count( $chapters ) : 0;
-
                 $is_free = tutor_utils()->is_course_free( $post->ID );
                 $course_type = $is_free ? 'Gratuit' : 'Payant';
 
                 $file_id = get_post_meta( $post->ID, 'attached_course_file', true );
                 $file_url = $file_id ? wp_get_attachment_url( $file_id ) : '';
+
+                $pdf_acf_id = get_field( 'pdf_du_cours', $post->ID );
+                $pdf_acf_url = $pdf_acf_id ? wp_get_attachment_url( $pdf_acf_id ) : '';
                 ?>
                 <div class="tutor-card tutor-course-card" style="margin-bottom: 20px;">
                     <a href="<?php echo esc_url( get_the_permalink() ); ?>" class="tutor-d-block">
@@ -173,7 +192,13 @@ $response = wp_remote_get( 'https://backend-lms-lc89.onrender.com/api/cours/aute
 
                         <?php if ( $file_url ) : ?>
                             <div class="tutor-meta tutor-color-muted tutor-mb-8">
-                                📎 <a href="<?php echo esc_url( $file_url ); ?>" target="_blank">Voir le fichier</a>
+                                📎 <a href="<?php echo esc_url( $file_url ); ?>" target="_blank">Fichier principal</a>
+                            </div>
+                        <?php endif; ?>
+
+                        <?php if ( $pdf_acf_url ) : ?>
+                            <div class="tutor-meta tutor-color-muted tutor-mb-8">
+                                📄 <a href="<?php echo esc_url( $pdf_acf_url ); ?>" target="_blank">PDF Détail</a>
                             </div>
                         <?php endif; ?>
 
@@ -183,10 +208,7 @@ $response = wp_remote_get( 'https://backend-lms-lc89.onrender.com/api/cours/aute
                         </div>
                     </div>
                 </div>
-            <?php
-            endforeach;
-            wp_reset_postdata();
-            ?>
+            <?php endforeach; wp_reset_postdata(); ?>
         </div>
     </div>
 </div>

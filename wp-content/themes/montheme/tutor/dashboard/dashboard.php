@@ -12,6 +12,16 @@
 use Tutor\Models\CourseModel;
 use Tutor\Models\WithdrawModel;
 
+$response = wp_remote_get('http://127.0.0.1:5000/ping');
+
+if (is_wp_error($response)) {
+    echo 'Erreur de connexion à Flask : ' . $response->get_error_message();
+} else {
+    $body = wp_remote_retrieve_body($response);
+    echo 'Réponse Flask : ' . $body;
+}
+
+
 if ( tutor_utils()->get_option( 'enable_profile_completion' ) ) {
 	$profile_completion = tutor_utils()->user_profile_completion();
 	$is_instructor      = tutor_utils()->is_instructor( null, true );
