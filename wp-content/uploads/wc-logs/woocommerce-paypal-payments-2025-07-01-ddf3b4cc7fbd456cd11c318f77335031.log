@@ -1,0 +1,22 @@
+2025-07-01T10:15:47+00:00 DEBUG #6323 - [New Request] GET /htdocs/wp-json/wc/v3/wc_paypal/webhooks
+2025-07-01T10:15:47+00:00 DEBUG #6323 - GET https://api.woocommerce.com/integrations/ppc/v1/notifications/webhooks
+Response: Array
+(
+    [code] => 404
+    [message] => Not Found
+)
+
+Response Body: {"statusCode":404,"error":"Not Found","message":"Not Found"}
+
+2025-07-01T10:16:09+00:00 DEBUG #8011 - [New Request] POST /htdocs/wp-json/wc/v3/wc_paypal/login_link
+2025-07-01T10:16:09+00:00 INFO #8011 - Generating onboarding URL for: production-advanced_vaulting-express_checkout-
+2025-07-01T10:16:10+00:00 DEBUG #8011 - POST https://api.woocommerce.com/integrations/ppc/v2/customer/partner-referrals
+Request Body: {"partner_config_override":{"return_url":"http:\/\/127.0.0.1\/htdocs\/wp-admin\/admin.php?page=wc-settings&tab=checkout&section=ppcp-gateway&ppcpToken=eyJrIjoicHJvZHVjdGlvbi1hZHZhbmNlZF92YXVsdGluZy1leHByZXNzX2NoZWNrb3V0LSIsInUiOjEsImgiOiJiYTAyOGUzZjlkNTU2MTgzNmY3ODk1NmVlNjg0MGJhNSJ9","return_url_description":"Revenir sur votre site.","show_add_credit_card":false},"products":["EXPRESS_CHECKOUT","ADVANCED_VAULTING"],"legal_consents":[{"type":"SHARE_DATA_CONSENT","granted":true}],"operations":[{"operation":"API_INTEGRATION","api_integration_preference":{"rest_api_integration":{"integration_method":"PAYPAL","integration_type":"FIRST_PARTY","first_party_details":{"features":["PAYMENT","REFUND","ADVANCED_TRANSACTIONS_SEARCH","TRACKING_SHIPMENT_READWRITE","BILLING_AGREEMENT"],"seller_nonce":"a1233wtergfsdt4365tzrshgfbaewa36AGa1233wtergfsdt4365tzrshgfbaewa36AG"}}}}]}
+Response Debug ID: 2ad2ef4f727a6
+Response: Array
+(
+    [code] => 201
+    [message] => Created
+)
+
+

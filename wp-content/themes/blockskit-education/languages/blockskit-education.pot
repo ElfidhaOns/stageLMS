@@ -1,0 +1,404 @@
+# Copyright (C) 2024 BlockskitDev
+# This file is distributed under the GPLv3 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Blockskit Education 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/blockskit-education\n"
+"POT-Creation-Date: 2024-05-06 09:36:01+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2024-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: functions.php:48
+msgid "Blockskit Education Patterns"
+msgstr ""
+
+#: patterns/about.php:32
+msgid "20"
+msgstr ""
+
+#: patterns/about.php:36
+msgid "Years Of Experience"
+msgstr ""
+
+#: patterns/about.php:56
+msgid "ABOUT US"
+msgstr ""
+
+#: patterns/about.php:60
+msgid "Learn With Expert Anywhere, Anytime"
+msgstr ""
+
+#: patterns/about.php:64
+msgid "Est consequuntur reiciendis cum dolor ullam euismod quibusdam nihil, similique! Maecenas quas, unde blanditiis doloremque! Ligula.Vestibulum posuere erat temporibus dolorum quibusdam tellu."
+msgstr ""
+
+#: patterns/about.php:75
+msgid "Learn With Expert"
+msgstr ""
+
+#: patterns/about.php:87
+msgid "Starting Courses"
+msgstr ""
+
+#: patterns/about.php:99
+msgid "Lifetime Access"
+msgstr ""
+
+#: patterns/about.php:111
+msgid "Online Degrees"
+msgstr ""
+
+#: patterns/about.php:119
+msgid "MORE ABOUT US"
+msgstr ""
+
+#: patterns/about.php:123
+msgid "JOIN US NOW !"
+msgstr ""
+
+#: patterns/category.php:24
+msgid "TOP CATEGORIES"
+msgstr ""
+
+#: patterns/category.php:28
+msgid "Our Trending Categories"
+msgstr ""
+
+#: patterns/category.php:32 patterns/feature-course.php:31
+#: patterns/latest-posts.php:26 patterns/team.php:32
+msgid "Egestas nec orci labore distinctio irure ornare montes hic erat illo sapien? Beatae, laboriosam, eiusmod consequat suscipit rem nascetur perspiciatis, voluptatem congue."
+msgstr ""
+
+#: patterns/category.php:49
+msgid "Chemistry"
+msgstr ""
+
+#: patterns/category.php:53 patterns/category.php:69 patterns/category.php:85
+#: patterns/category.php:101
+msgid "Eius ultricies scelerisque egestas cubilia aenean convallis cumque."
+msgstr ""
+
+#: patterns/category.php:65
+msgid "Finance"
+msgstr ""
+
+#: patterns/category.php:81
+msgid "Business"
+msgstr ""
+
+#: patterns/category.php:97
+msgid "Health"
+msgstr ""
+
+#: patterns/category.php:109
+msgid "VIEW ALL CATAGORIES"
+msgstr ""
+
+#: patterns/feature-course.php:23
+msgid "FEATURE COURSES"
+msgstr ""
+
+#: patterns/feature-course.php:27
+msgid "Find Yours From The Feature"
+msgstr ""
+
+#: patterns/feature-course.php:46
+msgid "ARCHITECTURE"
+msgstr ""
+
+#: patterns/feature-course.php:57
+msgid "$55.00"
+msgstr ""
+
+#: patterns/feature-course.php:61 patterns/feature-course.php:101
+#: patterns/feature-course.php:141
+msgid "The Power Of Podcast For Story Telling"
+msgstr ""
+
+#: patterns/feature-course.php:66
+msgid "4 Lessons"
+msgstr ""
+
+#: patterns/feature-course.php:74
+msgid "4 hours 20 minutes"
+msgstr ""
+
+#: patterns/feature-course.php:86
+msgid "ENGINEERING"
+msgstr ""
+
+#: patterns/feature-course.php:97
+msgid "$65.00"
+msgstr ""
+
+#: patterns/feature-course.php:106
+msgid "2 Lessons"
+msgstr ""
+
+#: patterns/feature-course.php:114
+msgid "5 hours 20 minutes"
+msgstr ""
+
+#: patterns/feature-course.php:126
+msgid "BUSINESS"
+msgstr ""
+
+#: patterns/feature-course.php:137
+msgid "$49.00"
+msgstr ""
+
+#: patterns/feature-course.php:146
+msgid "3 Lessons"
+msgstr ""
+
+#: patterns/feature-course.php:154
+msgid "6 hours 20 minutes"
+msgstr ""
+
+#: patterns/feature.php:28
+msgid "Courses"
+msgstr ""
+
+#: patterns/feature.php:32
+msgid "120k+ Course"
+msgstr ""
+
+#: patterns/feature.php:48
+msgid "Programs"
+msgstr ""
+
+#: patterns/feature.php:52
+msgid "30k+ Course"
+msgstr ""
+
+#: patterns/feature.php:68
+msgid "Events"
+msgstr ""
+
+#: patterns/feature.php:72
+msgid "Weekly Events"
+msgstr ""
+
+#: patterns/feature.php:88
+msgid "Admissions"
+msgstr ""
+
+#: patterns/feature.php:92
+msgid "Flexible Time"
+msgstr ""
+
+#: patterns/footer.php:20
+msgid "Nisl libero ullamcorper id ipsum viverra mauris non pellentesque placerat lorem lacinia sagittis non pretium."
+msgstr ""
+
+#: patterns/footer.php:38
+msgid "Products"
+msgstr ""
+
+#: patterns/footer.php:46
+msgid "Company"
+msgstr ""
+
+#: patterns/footer.php:58
+msgid "Resources"
+msgstr ""
+
+#: patterns/footer.php:66
+msgid "Support"
+msgstr ""
+
+#: patterns/footer.php:77
+msgid "Copyright © 2024 ·"
+msgstr ""
+
+#: patterns/footer.php:83
+msgid "· All rights reserved"
+msgstr ""
+
+#: patterns/header.php:33
+msgid "BOOK SEAT"
+msgstr ""
+
+#: patterns/hero-banner.php:17
+msgid "100% BEST LEARNING PLATFORM"
+msgstr ""
+
+#: patterns/hero-banner.php:21
+msgid "Learn &amp; Improve Your Education"
+msgstr ""
+
+#: patterns/hero-banner.php:25
+msgid "ncidunt sunt animi! Eleifend fames fringilla cumque, dui scelerisque minim Ex necessitatibus irure. Veritatis augue dis, molestias, magni scelerisque proident quia, pellentesque fames fringilla cumque."
+msgstr ""
+
+#: patterns/hero-banner.php:30
+msgid "LEARN MORE"
+msgstr ""
+
+#: patterns/hero-banner.php:34
+msgid "FIND COURSES"
+msgstr ""
+
+#: patterns/latest-posts.php:18
+msgid "BLOGS &amp; INSIGHTS"
+msgstr ""
+
+#: patterns/latest-posts.php:22
+msgid "Checkout Our Blogs &amp; Insights"
+msgstr ""
+
+#: patterns/team.php:24
+msgid "OUR TEAM"
+msgstr ""
+
+#: patterns/team.php:28
+msgid "Best Instructor &amp; Teachers"
+msgstr ""
+
+#: patterns/team.php:49
+msgid "Christane Eve"
+msgstr ""
+
+#: patterns/team.php:53
+msgid "Account Teacher"
+msgstr ""
+
+#: patterns/team.php:75
+msgid "Edward Norton"
+msgstr ""
+
+#: patterns/team.php:79
+msgid "Science Teacher"
+msgstr ""
+
+#: patterns/team.php:101
+msgid "Jane Seymour"
+msgstr ""
+
+#: patterns/team.php:105
+msgid "Business Teacher"
+msgstr ""
+
+#: patterns/team.php:127
+msgid "Maanya Hardson"
+msgstr ""
+
+#: patterns/team.php:131
+msgid "Art And Tech"
+msgstr ""
+
+#: patterns/team.php:149
+msgid "VIEW ALL TEAMS"
+msgstr ""
+
+#: patterns/template-404.php:24
+msgid "This page could not be found. Maybe try a search?"
+msgstr ""
+
+#: patterns/template-cart.php:27 patterns/template-cart.php:90
+#: patterns/template-cart.php:153
+msgid "You may be interested in…"
+msgstr ""
+
+#: patterns/template-cart.php:209
+msgid "Your cart is currently empty!"
+msgstr ""
+
+#: patterns/template-cart.php:213
+msgid "Browse store"
+msgstr ""
+
+#: patterns/template-cart.php:221
+msgid "New in store"
+msgstr ""
+
+#: patterns/template-order-confirmation.php:22
+msgid "Order Confirmation"
+msgstr ""
+
+#: patterns/template-order-confirmation.php:40
+msgid "Order details"
+msgstr ""
+
+#: patterns/template-order-confirmation.php:48
+msgid "Downloads"
+msgstr ""
+
+#: patterns/template-order-confirmation.php:58
+msgid "Shipping address"
+msgstr ""
+
+#: patterns/template-order-confirmation.php:68
+msgid "Billing address"
+msgstr ""
+
+#: patterns/template-product-search-results.php:49
+msgid "No products were found matching your selection."
+msgstr ""
+
+#: patterns/template-search.php:51
+msgid "Sorry, but nothing matched your search terms. Try another search?"
+msgstr ""
+
+#: patterns/template-single-product.php:58
+msgid "Related products"
+msgstr ""
+
+#: patterns/testimonial.php:20
+msgid "OUR TESTIMONIALS"
+msgstr ""
+
+#: patterns/testimonial.php:24
+msgid "What Our Student Says"
+msgstr ""
+
+#: patterns/testimonial.php:28
+msgid "Convallis lacinia sapiente tincidunt occaecat suscipit accusantium lacinia cras, adipiscing aliquip magna gravida temporibus."
+msgstr ""
+
+#: patterns/testimonial.php:33
+msgid "MORE REVIEWS"
+msgstr ""
+
+#: patterns/testimonial.php:59 patterns/testimonial.php:99
+msgid "Gravida nihil nulla eum esent  reiciendis! Pariatur expedita integer accuss eouys rem molestias. Etiam consequatee."
+msgstr ""
+
+#: patterns/testimonial.php:69
+msgid "Celia Almeda"
+msgstr ""
+
+#: patterns/testimonial.php:73
+msgid "Account, Student"
+msgstr ""
+
+#: patterns/testimonial.php:109
+msgid "Frank Kinney"
+msgstr ""
+
+#: patterns/testimonial.php:113
+msgid "Science, Student"
+msgstr ""
+#. Theme Name of the plugin/theme
+msgid "Blockskit Education"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "https://blockskit.com/blockskit-education/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Blockskit Education is a modern and versatile WordPress theme designed for various types of websites including academy, classes, course, courses, education, education wordpress theme, elearning, learning, learning management system, lms, online education, teacher, teaching, training, university and more. It offers full-site-editing, allowing easy customization of all aspects of your site. With multiple templates, patterns, and style variations, it's suitable for different aesthetics. The theme is also compatible with popular plugins like Elementor, WooCommerce, and Spectra – WordPress Gutenberg Blocks, adding extra functionality to your site."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "BlockskitDev"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://blockskit.com"
+msgstr ""

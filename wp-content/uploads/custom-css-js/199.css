@@ -1,0 +1,119 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+/* Center and style the form wrapper */
+.um {
+  max-width: 500px;
+  margin: 50px auto;
+}
+
+.um.um-register,
+.um.um-login,
+.um.um-profile {
+  max-width: 500px;
+  margin: 50px auto;
+  background: #ffffff;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  font-family: 'Cardo';
+}
+
+/* Style all labels */
+.um .um-field-label {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 6px;
+  display: block;
+  color: #1e1e1e;
+}
+
+/* Style all input fields */
+.um input[type="text"],
+.um input[type="email"],
+.um input[type="password"],
+.um input[type="tel"],
+.um input[type="url"],
+.um textarea,
+.um select {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  font-weight: 400 !important; /* or use 300 for lighter text */
+  background-color: #ffffff;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Focus effect for inputs */
+.um input:focus,
+.um textarea:focus,
+.um select:focus {
+  border-color: #3E64DE;
+  box-shadow: 0 0 0 2px rgba(62, 100, 222, 0.2);
+  outline: none;
+  background-color: #ffffff;
+}
+
+/* Style the submit (primary) button */
+.um input.um-button,
+input[type=submit].um-button,
+.um a.um-button {
+  background-color: #3E64DE !important;
+  color: #ffffff;
+  padding: 12px 22px;
+  font-size: 15px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-align: center;
+  border: none;
+  display: inline-block;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.um input.um-button:hover,
+.um a.um-button:hover {
+  background-color: #395BCA !important;
+  cursor: pointer;
+}
+
+}
+
+/* Field icons if enabled */
+.um-field .um-icon {
+  color: #3E64DE;
+}
+/* Secondary (alt) button style - make it look like the primary button */
+.um .um-button.um-alt {
+  background-color: #3E64DE !important;
+  color: #ffffff !important;
+  padding: 12px 22px;
+  font-size: 15px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-align: center;
+  border: none;
+  display: inline-block;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.um .um-button.um-alt:hover {
+  background-color: #395BCA !important;
+  cursor: pointer;
+}
+
+/* Error messages */
+.um .um-error {
+  color: #d93025;
+  font-weight: 500;
+  background: #ffe9e9;
+  padding: 10px 14px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+</style>
+<!-- end Simple Custom CSS and JS -->

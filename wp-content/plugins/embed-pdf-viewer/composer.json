@@ -1,0 +1,50 @@
+{
+    "name": "afragen/embed-pdf-viewer",
+    "description": "Embed a PDF from the Media Library or elsewhere via oEmbed or as a block into an `iframe` tag or Google Doc Viewer.",
+    "type": "wordpress-plugin",
+    "keywords": [
+        "pdf",
+        "viewer",
+        "oembed",
+        "block"
+    ],
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Andy Fragen",
+            "email": "andy@thefragens.com",
+            "homepage": "https://thefragens.com",
+            "role": "Developer"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/afragen/embed-pdf-viewer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/afragen/embed-pdf-viewer/issues",
+        "source": "https://github.com/afragen/embed-pdf-viewer"
+    },
+    "prefer-stable": true,
+    "require": {
+        "php": ">=7.4"
+    },
+    "require-dev": {
+        "wp-coding-standards/wpcs": "^3.0.0"
+      },
+      "config": {
+        "allow-plugins": {
+          "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+      },
+        "scripts": {
+        "make-pot": [
+            "wp i18n make-pot . languages/embed-pdf-viewer.pot --exclude='/build'"
+        ],
+        "wpcs": [
+            "vendor/bin/phpcbf .; vendor/bin/phpcs ."
+        ]
+    }
+}

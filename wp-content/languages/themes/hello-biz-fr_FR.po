@@ -1,0 +1,283 @@
+# Translation of Themes - Hello Biz in French (France)
+# This file is distributed under the same license as the Themes - Hello Biz package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-02-10 11:27:16+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: GlotPress/4.0.1\n"
+"Language: fr\n"
+"Project-Id-Version: Themes - Hello Biz\n"
+
+#. Theme Name of the theme
+#: style.css modules/admin-home/components/admin-menu-controller.php:22
+#: modules/admin-home/components/admin-menu-controller.php:23
+#: assets/js/hello-biz-admin-top-bar.js:1
+#, gp-priority: high
+msgid "Hello Biz"
+msgstr "Hello Biz"
+
+#: modules/admin-home/rest/promotions.php:30
+msgid "Try Image Optimizer for free"
+msgstr "Essayer gratuitement l’outil d’optimisation des images"
+
+#: modules/admin-home/rest/promotions.php:29
+msgid "Improve Speed."
+msgstr "Améliorer la vitesse."
+
+#: modules/admin-home/rest/promotions.php:28
+msgid "Reduce Size."
+msgstr "Réduire la taille."
+
+#: modules/admin-home/rest/promotions.php:27
+msgid "Optimize Images."
+msgstr "Optimiser les images."
+
+#: modules/theme/starter-content/home.php:400
+msgctxt "Theme starter content"
+msgid "Home"
+msgstr "Accueil"
+
+#: template-parts/single.php:31
+msgid "Tagged "
+msgstr "Étiquetté "
+
+#: template-parts/search.php:73
+msgid "It seems we can't find what you're looking for."
+msgstr "Il semble que nous ne trouvions pas ce que vous cherchez."
+
+#: template-parts/header.php:43
+msgid "Main menu"
+msgstr "Menu principal"
+
+#: template-parts/footer.php:21
+msgid "Footer menu"
+msgstr "Menu pied de page"
+
+#. translators: %s: HTML entity for arrow character.
+#: template-parts/archive.php:54
+msgid "Next %s"
+msgstr "%s suivant"
+
+#. translators: %s: HTML entity for arrow character.
+#: template-parts/archive.php:50
+msgid "%s Previous"
+msgstr "%s précédent"
+
+#: modules/theme/components/customizer.php:22
+msgid "Header & Footer"
+msgstr "Entête & pied de page"
+
+#: modules/theme/classes/customizer-action-links.php:95
+msgid "By clicking “Begin setup” I agree to install and activate the Hello+ plugin."
+msgstr "En cliquant sur « Commencer l’installation », j’accepte d’installer et d’activer l’extension Hello+."
+
+#: modules/theme/classes/customizer-action-links.php:92
+msgid "Click “Begin setup” to customize your cross-site header & footer."
+msgstr "Cliquez sur « Commencer la configuration » pour personnaliser votre entête et votre pied de page intersites."
+
+#: modules/theme/classes/customizer-action-links.php:81
+#: modules/theme/classes/customizer-action-links.php:83
+msgid "Activate Elementor"
+msgstr "Activer Elementor"
+
+#: modules/theme/classes/customizer-action-links.php:63
+#: modules/theme/classes/customizer-action-links.php:82
+msgid "Create cross-site header & footer using Elementor."
+msgstr "Créez un entête et un pied de page intersites avec Elementor."
+
+#: modules/theme/classes/customizer-action-links.php:62
+#: modules/theme/classes/customizer-action-links.php:64
+msgid "Install Elementor"
+msgstr "Installer Elementor"
+
+#: modules/theme/classes/customizer-action-links.php:61
+#: modules/theme/classes/customizer-action-links.php:80
+#: modules/theme/classes/customizer-action-links.php:90
+msgid "Elementor"
+msgstr "Elementor"
+
+#: modules/conversion-banner/components/conversion-banner.php:62
+msgid "Finish Setup"
+msgstr "Terminer la configuration"
+
+#: modules/admin-home/rest/theme-settings.php:52
+msgid "Settings must be an array"
+msgstr "Les réglages doivent être un tableau"
+
+#: modules/admin-home/rest/promotions.php:93
+msgid "Role Manager"
+msgstr "Gestionnaire de rôle"
+
+#: modules/admin-home/rest/promotions.php:92
+msgid "Customs Attribute"
+msgstr "Attributs personnalisés"
+
+#: modules/admin-home/rest/promotions.php:91
+msgid "Form Integrations"
+msgstr "Intégrations de formulaires"
+
+#: modules/admin-home/rest/promotions.php:90
+msgid "Form Submission"
+msgstr "Envoi du formulaire"
+
+#: modules/admin-home/rest/promotions.php:89
+msgid "Collaborative Notes"
+msgstr "Notes collaboratives"
+
+#: modules/admin-home/rest/promotions.php:88
+msgid "E-commerce Features"
+msgstr "Fonctionnalités de e-commerce"
+
+#: modules/admin-home/rest/promotions.php:87
+msgid "Custom Code & CSS"
+msgstr "Code personnalisé et CSS"
+
+#: modules/admin-home/rest/promotions.php:83
+msgid "Upgrade Now"
+msgstr "Mettre à niveau maintenant"
+
+#: modules/admin-home/rest/promotions.php:81
+msgid "Get complete design flexibility for your website with Elementor Pro’s advanced tools and premium features."
+msgstr "Bénéficiez d’une flexibilité de conception totale pour votre site avec les outils avancés et les fonctionnalités premium d’Elementor PRO."
+
+#: modules/admin-home/rest/promotions.php:79
+msgid "Bring your vision to life"
+msgstr "Donnez vie à votre vision"
+
+#: modules/admin-home/rest/promotions.php:78
+msgid "Elementor Pro"
+msgstr "Elementor PRO"
+
+#: modules/admin-home/rest/promotions.php:69
+msgid "Let's Go"
+msgstr "C’est parti"
+
+#: modules/admin-home/rest/promotions.php:67
+msgid "Boost creativity with Elementor AI. Craft & enhance copy, create custom CSS & Code, and generate images to elevate your website."
+msgstr "Stimulez la créativité avec l’IA d’Elementor. Créez et améliorez le texte, créez des CSS et du code personnalisés et générez des images pour améliorer votre site."
+
+#: modules/admin-home/rest/promotions.php:64
+#: modules/admin-home/rest/promotions.php:65
+msgid "Elementor AI"
+msgstr "Elementor IA"
+
+#: modules/admin-home/rest/promotions.php:32
+#: modules/admin-home/rest/promotions.php:51
+msgid "Install"
+msgstr "Installer"
+
+#: modules/admin-home/rest/promotions.php:24
+msgid "Elementor Image Optimizer"
+msgstr "Optimiseur d’image Elementor"
+
+#: modules/admin-home/rest/admin-config.php:317
+msgid "View site"
+msgstr "Voir le site"
+
+#: modules/admin-home/rest/admin-config.php:311
+msgid "Edit home page"
+msgstr "Modifier la page d’accueil"
+
+#: modules/admin-home/rest/admin-config.php:266
+#: modules/conversion-banner/components/conversion-banner.php:56
+#: modules/theme/classes/customizer-action-links.php:93
+msgid "Begin Setup"
+msgstr "Commencer la configuration"
+
+#: modules/admin-home/rest/admin-config.php:271
+#: modules/admin-home/rest/admin-config.php:291
+msgid "To get access to the full suite of features, including theme kits, header and footer templates, and more widgets, click “Begin setup” and start your web creator journey."
+msgstr "Pour accéder à la suite complète de fonctionnalités, y compris les kits de thèmes, les modèles d’entête et de pied de page, et d’autres widgets, cliquez sur « Commencer la configuration » et commencez votre parcours de créateur Web."
+
+#: modules/admin-home/rest/admin-config.php:254
+msgid "Site Fonts"
+msgstr "Polices du site"
+
+#: modules/admin-home/rest/admin-config.php:248
+msgid "Site Colors"
+msgstr "Couleurs du site"
+
+#: modules/admin-home/rest/admin-config.php:235
+msgid "Site Logo"
+msgstr "Logo du site"
+
+#: modules/admin-home/rest/admin-config.php:161
+#: modules/theme/components/theme-support.php:22
+msgid "Footer"
+msgstr "Pied de page"
+
+#: modules/admin-home/rest/admin-config.php:153
+#: modules/theme/components/theme-support.php:21
+msgid "Header"
+msgstr "Entête"
+
+#: modules/admin-home/rest/admin-config.php:133
+#: modules/settings/components/settings-menu.php:16
+#: modules/settings/components/settings-menu.php:17
+msgid "Settings"
+msgstr "Réglages"
+
+#: modules/admin-home/rest/admin-config.php:128
+msgid "Add New Page"
+msgstr "Ajouter une nouvelle page"
+
+#: modules/admin-home/components/admin-menu-controller.php:33
+#: modules/admin-home/components/admin-menu-controller.php:34
+#: modules/admin-home/components/admin-menu-controller.php:49
+#: modules/admin-home/components/admin-menu-controller.php:50
+#: template-parts/header.php:30
+msgid "Home"
+msgstr "Accueil"
+
+#: includes/module-base.php:259 includes/module-base.php:270
+msgid "Something went wrong."
+msgstr "Quelque chose s’est mal passé."
+
+#: header.php:31
+msgid "Skip to content"
+msgstr "Passer au contenu"
+
+#: comments.php:37
+msgctxt "comments title"
+msgid "%s Response"
+msgid_plural "%s Responses"
+msgstr[0] "%s réponse"
+msgstr[1] "%s réponses"
+
+#: comments.php:32
+msgctxt "comments title"
+msgid "One Response"
+msgstr "Une réponse"
+
+#: modules/theme/classes/customizer-action-links.php:91
+msgid "Style cross-site header & footer"
+msgstr "Style d’entête et de pied de page inter-sites"
+
+#: modules/conversion-banner/components/conversion-banner.php:90
+msgid "Notice dismissed."
+msgstr "Notification ignorée."
+
+#: modules/admin-home/rest/promotions.php:86
+msgid "Popup Builder"
+msgstr "Constructeur de fenêtre surgissante"
+
+#. Author URI of the theme
+#: style.css
+#, gp-priority: low
+msgid "https://elementor.com/?utm_source=wp-themes&utm_campaign=author-uri&utm_medium=wp-dash"
+msgstr "https://elementor.com/?utm_source=wp-themes&utm_campaign=author-uri&utm_medium=wp-dash"
+
+#. Author of the theme
+#: style.css
+#, gp-priority: low
+msgid "Elementor Team"
+msgstr "Équipe Elementor"
+
+#. Theme URI of the theme
+#: style.css
+#, gp-priority: low
+msgid "https://elementor.com/products/hello-biz/?utm_source=wp-themes&utm_campaign=theme-uri&utm_medium=wp-dash"
+msgstr "https://elementor.com/products/hello-biz/?utm_source=wp-themes&utm_campaign=theme-uri&utm_medium=wp-dash"

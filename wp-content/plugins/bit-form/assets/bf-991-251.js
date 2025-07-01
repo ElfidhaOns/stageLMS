@@ -1,0 +1,1 @@
+import{j as r}from"./main-216.js";function o({size:s,stroke:t=2}){return r.jsxs("svg",{width:s,height:s,viewBox:"0 0 24 24",fill:"none",stroke:"currentColor",strokeWidth:t,className:"svg-icn",children:[r.jsx("path",{d:"M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"}),r.jsx("circle",{cx:"12",cy:"12",r:"3"})]})}export{o as E};

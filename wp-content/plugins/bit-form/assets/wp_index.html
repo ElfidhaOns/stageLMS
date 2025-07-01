@@ -1,0 +1,29 @@
+<?php if (!defined('ABSPATH') && !defined('BITFORMS_ASSET_URI')) { exit; } ?>
+
+<noscript>You need to enable JavaScript to run this app.</noscript>
+<div id="btcd-app">
+  <div
+    style="display: flex;flex-direction: column;justify-content: center;align-items: center;height: 90vh;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+    <img alt="bitform-logo" class="bit-logo" width="70" src="<?php echo BITFORMS_ASSET_URI; ?>/img/logo.svg">
+    <h1>Welcome to Bit Form.</h1>
+    <p>Modern Form builder and entries management plugin for Wordpress</p>
+  </div>
+</div>
+<script>
+  const { backgroundColor } = window.getComputedStyle(document.querySelector('#wpadminbar'))
+  document.querySelector('#wpbody').style.backgroundColor = backgroundColor
+  document.querySelector('#wpcontent').style.paddingLeft = 0
+</script>
+<script defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.8/xlsx.full.min.js"></script>
+
+<?php if(defined('BIT_DEV_URL') && BIT_DEV_URL){ ?>
+<script type="module">
+  import RefreshRuntime from "<?php echo BIT_DEV_URL; ?>/@react-refresh"
+  RefreshRuntime.injectIntoGlobalHook(window)
+  window.$RefreshReg$ = () => { }
+  window.$RefreshSig$ = () => (type) => type
+  window.__vite_plugin_react_preamble_installed__ = true
+</script>
+<script type="module" src="<?php echo BIT_DEV_URL; ?>/@vite/client"></script>
+<script type="module" src="<?php echo BIT_DEV_URL; ?>/index.jsx"></script>
+<?php } ?>
