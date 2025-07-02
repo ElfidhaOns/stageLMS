@@ -1,81 +1,147 @@
+<?php
 
 add_action('tutor_course/single/enrolled/before', 'add_ai_quiz_button');
 
 function add_ai_quiz_button() {
     if ( current_user_can('tutor_instructor') && is_singular('courses') ) {
         ?>
-        <button id="generate-ai-quiz" class="tutor-btn tutor-btn-primary" data-course-id="<?php echo get_the_ID(); ?>">
-            🤖 Générer un quiz IA
-        </button>
+        <div class="tutor-mb-20">
+            <button id="generate-ai-quiz" class="tutor-btn tutor-btn-primary" data-course-id="<?php echo get_the_ID(); ?>">
+                🤖 <?php _e('Generate AI Quiz', 'tutor'); ?>
+            </button>
+            <div id="quiz-generation-feedback" class="tutor-mt-10" style="display:none;"></div>
+        </div>
         <script>
-        document.getElementById('generate-ai-quiz').addEventListener('click', function () {
-            const courseId = this.dataset.courseId;
-            fetch('/wp-admin/admin-ajax.php?action=generate_ai_quiz&course_id=' + courseId)
-              .then(res => res.json())
-              .then(data => alert(data.message))
-              .catch(err => alert('Erreur : ' + err));
+        jQuery(document).ready(function($) {
+            $('#generate-ai-quiz').on('click', function() {
+                var $button = $(this);
+                var $feedback = $('#quiz-generation-feedback');
+                var courseId = $button.data('course-id');
+                
+                $button.prop('disabled', true);
+                $feedback.html('<div class="tutor-alert tutor-alert-info"><?php _e("Generating quiz...", "tutor"); ?></div>').show();
+                
+                $.ajax({
+                    url: '<?php echo admin_url("admin-ajax.php"); ?>',
+                    type: 'POST',
+                    dataType: 'json',
+                    data: {
+                        action: 'generate_ai_quiz',
+                        course_id: courseId,
+                        security: '<?php echo wp_create_nonce("generate_ai_quiz_nonce"); ?>'
+                    },
+                    success: function(response) {
+                        if (response.success) {
+                            $feedback.html('<div class="tutor-alert tutor-alert-success">'+response.data.message+'</div>');
+                            // Optional: reload or redirect to quiz
+                            window.location.href = '<?php echo admin_url("post.php?post=QUIZID&action=edit"); ?>'.replace('QUIZID', response.data.quiz_id);
+                        } else {
+                            $feedback.html('<div class="tutor-alert tutor-alert-danger">'+response.data.message+'</div>');
+                        }
+                    },
+                    error: function(xhr) {
+                        $feedback.html('<div class="tutor-alert tutor-alert-danger"><?php _e("Error processing request", "tutor"); ?></div>');
+                    },
+                    complete: function() {
+                        $button.prop('disabled', false);
+                    }
+                });
+            });
         });
         </script>
         <?php
     }
 }
+
 add_action('wp_ajax_generate_ai_quiz', 'handle_generate_ai_quiz');
 
 function handle_generate_ai_quiz() {
-    $course_id = intval($_GET['course_id']);
-
-    // 🔁 Appel à Flask
-    $response = wp_remote_post('http://127.0.0.1:5000/api/generate-quiz', [
-        'headers' => ['Content-Type' => 'application/json'],
-        'body' => json_encode(['course_content' => get_the_content($course_id)])
-    ]);
-
-    if (is_wp_error($response)) {
-        wp_send_json_error(['message' => 'Erreur de connexion à Flask']);
+    // Verify nonce
+    check_ajax_referer('generate_ai_quiz_nonce', 'security');
+    
+    // Check permissions
+    if (!current_user_can('tutor_instructor')) {
+        wp_send_json_error(['message' => __('Permission denied', 'tutor')]);
     }
 
-    $data = json_decode(wp_remote_retrieve_body($response), true);
-    $questions = $data['questions'] ?? [];
-
-    if (empty($questions)) {
-        wp_send_json_error(['message' => 'Aucune question reçue']);
+    $course_id = intval($_POST['course_id']);
+    $course = get_post($course_id);
+    
+    if (!$course || $course->post_type !== 'courses') {
+        wp_send_json_error(['message' => __('Invalid course', 'tutor')]);
     }
 
-    // 📝 Création du post quiz
-    $quiz_post_id = wp_insert_post([
-        'post_title' => 'Quiz IA - ' . get_the_title($course_id),
-        'post_type' => 'tutor_quiz',
-        'post_status' => 'publish',
-        'post_author' => get_current_user_id()
-    ]);
+    // Get full course content including curriculum
+    $course_content = tutor_utils()->get_course_content($course_id);
+    
+    try {
+        $response = wp_remote_post('http://127.0.0.1:5000/api/generate-quiz', [
+            'timeout' => 30,
+            'headers' => ['Content-Type' => 'application/json'],
+            'body' => json_encode([
+                'course_content' => $course_content,
+                'course_title' => $course->post_title
+            ])
+        ]);
 
-    if (!$quiz_post_id) {
-        wp_send_json_error(['message' => 'Erreur lors de la création du quiz']);
+        if (is_wp_error($response)) {
+            throw new Exception(__('Flask API connection error', 'tutor'));
+        }
+
+        $data = json_decode(wp_remote_retrieve_body($response), true);
+        $questions = $data['questions'] ?? [];
+
+        if (empty($questions)) {
+            throw new Exception(__('No questions received from AI', 'tutor'));
+        }
+
+        // Create quiz
+        $quiz_post_id = wp_insert_post([
+            'post_title' => sprintf(__('AI Quiz - %s', 'tutor'), $course->post_title),
+            'post_type' => 'tutor_quiz',
+            'post_status' => 'publish',
+            'post_author' => get_current_user_id(),
+            'post_content' => __('This quiz was automatically generated by AI', 'tutor')
+        ]);
+
+        if (is_wp_error($quiz_post_id)) {
+            throw new Exception(__('Quiz creation failed', 'tutor'));
+        }
+
+        // Format questions for Tutor LMS
+        $formatted_questions = [];
+        foreach ($questions as $index => $q) {
+            $formatted_questions[] = [
+                'question_title' => sanitize_text_field($q['question']),
+                'question_description' => '',
+                'question_type' => 'single_choice',
+                'question_mark' => 1,
+                'question_options' => array_map(function ($opt) {
+                    return [
+                        'option_title' => sanitize_text_field($opt),
+                        'option_value' => sanitize_title($opt)
+                    ];
+                }, $q['options']),
+                'correct_answer' => [sanitize_text_field($q['answer'])],
+                'question_order' => $index + 1
+            ];
+        }
+
+        update_post_meta($quiz_post_id, 'tutor_quiz_questions', $formatted_questions);
+        
+        // Link to first topic
+        $topics = tutor_utils()->get_topics_by_course($course_id);
+        if (!empty($topics)) {
+            $topic_id = $topics[0]->term_id;
+            tutor_utils()->add_quiz_to_topic($quiz_post_id, $course_id, $topic_id);
+        }
+
+        wp_send_json_success([
+            'message' => __('AI quiz generated successfully!', 'tutor'),
+            'quiz_id' => $quiz_post_id
+        ]);
+        
+    } catch (Exception $e) {
+        wp_send_json_error(['message' => $e->getMessage()]);
     }
-
-    // 🧠 Conversion des questions
-    $formatted_questions = [];
-    foreach ($questions as $q) {
-        $formatted_questions[] = [
-            'question_title' => $q['question'],
-            'question_type' => 'single_choice',
-            'question_mark' => 1,
-            'question_options' => array_map(function ($opt) {
-                return ['option_title' => $opt];
-            }, $q['options']),
-            'correct_answer' => [$q['answer']]
-        ];
-    }
-
-    // 💾 Sauvegarde dans les métadonnées du quiz
-    update_post_meta($quiz_post_id, 'tutor_quiz_option', $formatted_questions);
-
-    // 🔗 Lier automatiquement au premier topic du cours (si existe)
-    $topics = tutor_utils()->get_topics_by_course($course_id);
-    if (!empty($topics)) {
-        $topic_id = $topics[0]->term_id;
-        tutor_utils()->add_quiz_to_topic($quiz_post_id, $course_id, $topic_id);
-    }
-
-    wp_send_json_success(['message' => 'Quiz IA généré avec succès 🎉']);
 }

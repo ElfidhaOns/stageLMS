@@ -21,7 +21,6 @@ if (is_wp_error($response)) {
     echo 'Réponse Flask : ' . $body;
 }
 
-
 if ( tutor_utils()->get_option( 'enable_profile_completion' ) ) {
 	$profile_completion = tutor_utils()->user_profile_completion();
 	$is_instructor      = tutor_utils()->is_instructor( null, true );
@@ -145,93 +144,85 @@ if ( tutor_utils()->get_option( 'enable_profile_completion' ) ) {
 
 <div class="tutor-fs-5 tutor-fw-medium tutor-color-black tutor-text-capitalize tutor-mb-24 tutor-dashboard-title"><?php esc_html_e( 'Tableau de bord', 'tutor' ); ?></div>
 <div class="tutor-dashboard-content-inner">
-<!-- Bouton Ajout de Cours PDF -->
-<div class="tutor-d-flex tutor-justify-end tutor-mt-32 tutor-mb-16">
-    <button class="tutor-btn tutor-btn-primary" onclick="document.getElementById('uploadPdfCourseModal').style.display='block'">
-        ➕ Ajouter un cours PDF / PPT
-    </button>
-</div>
-
-<!-- MODAL Ajout PDF -->
-<div id="uploadPdfCourseModal" style="display:none; position:fixed; top:10%; left:50%; transform:translateX(-50%); z-index:9999; background:#fff; border:1px solid #ccc; padding:20px; border-radius:10px; width:400px; box-shadow:0 0 20px rgba(0,0,0,0.3);">
-    <h3 style="margin-bottom:10px;">📄 Ajouter un cours PDF / PPT</h3>
-    <form method="post" enctype="multipart/form-data">
-        <label for="course_title">Titre du cours :</label>
-        <input type="text" name="course_title" id="course_title" required style="width:100%; margin-bottom:10px; padding:5px;">
-
-        <label for="course_file">Fichier PDF ou PPT :</label>
-        <input type="file" name="course_file" id="course_file" accept=".pdf,.ppt,.pptx" required style="margin-bottom:15px;">
-
-        <div style="display:flex; justify-content: space-between;">
-            <input type="submit" name="upload_pdf_course" value="📤 Télécharger" class="tutor-btn tutor-btn-primary">
-            <button type="button" class="tutor-btn tutor-btn-secondary" onclick="document.getElementById('uploadPdfCourseModal').style.display='none'">❌ Fermer</button>
-        </div>
-    </form>
-</div>
 
 	<?php
-	$user_id           = get_current_user_id();
-	$enrolled_course   = tutor_utils()->get_enrolled_courses_by_user( $user_id, array( 'private', 'publish' ) );
-	$completed_courses = tutor_utils()->get_completed_courses_ids_by_user();
-	$total_students    = tutor_utils()->get_total_students_by_instructor( $user_id );
-	$my_courses        = CourseModel::get_courses_by_instructor( $user_id, CourseModel::STATUS_PUBLISH );
-	$earning_sum       = WithdrawModel::get_withdraw_summary( $user_id );
-	$active_courses    = tutor_utils()->get_active_courses_by_user( $user_id );
+	$user_id = get_current_user_id();
+	$is_instructor = current_user_can( tutor()->instructor_role );
 
-	$enrolled_course_count  = $enrolled_course ? $enrolled_course->post_count : 0;
-	$completed_course_count = count( $completed_courses );
-	$active_course_count    = is_object( $active_courses ) && $active_courses->have_posts() ? $active_courses->post_count : 0;
+	// Initialize variables
+	$enrolled_course_count = 0;
+	$completed_course_count = 0;
+	$active_course_count = 0;
+	$total_students = 0;
+	$my_courses = array();
+	$earning_sum = null;
+
+	if ( $is_instructor ) {
+		// INSTRUCTOR DASHBOARD - Show only instructor-related data
+		$total_students = tutor_utils()->get_total_students_by_instructor( $user_id );
+		$my_courses = CourseModel::get_courses_by_instructor( $user_id, CourseModel::STATUS_PUBLISH );
+		$earning_sum = WithdrawModel::get_withdraw_summary( $user_id );
+	} else {
+		// STUDENT DASHBOARD - Show only student-related data
+		$enrolled_course = tutor_utils()->get_enrolled_courses_by_user( $user_id, array( 'private', 'publish' ) );
+		$completed_courses = tutor_utils()->get_completed_courses_ids_by_user();
+		$active_courses = tutor_utils()->get_active_courses_by_user( $user_id );
+		
+		$enrolled_course_count = $enrolled_course ? $enrolled_course->post_count : 0;
+		$completed_course_count = count( $completed_courses );
+		$active_course_count = is_object( $active_courses ) && $active_courses->have_posts() ? $active_courses->post_count : 0;
+	}
 
 	$status_translations = array(
 		'publish' => __( 'Publié', 'tutor' ),
 		'pending' => __( 'En attente', 'tutor' ),
 		'trash'   => __( 'Corbeille', 'tutor' ),
 	);
-
 	?>
+
 	<div class="tutor-row tutor-gx-lg-4">
-		<div class="tutor-col-lg-6 tutor-col-xl-4 tutor-mb-16 tutor-mb-lg-32">
-			<div class="tutor-card">
-				<div class="tutor-d-flex tutor-flex-lg-column tutor-align-center tutor-text-lg-center tutor-px-12 tutor-px-lg-24 tutor-py-8 tutor-py-lg-32">
-					<span class="tutor-round-box tutor-mr-12 tutor-mr-lg-0 tutor-mb-lg-12">
-						<i class="tutor-icon-book-open" area-hidden="true"></i>
-					</span>
-					<div class="tutor-fs-3 tutor-fw-bold tutor-d-none tutor-d-lg-block"><?php echo esc_html( $enrolled_course_count ); ?></div>
-					<div class="tutor-fs-7 tutor-color-secondary"><?php esc_html_e( 'Cours inscrits', 'tutor' ); ?></div>
-					<div class="tutor-fs-4 tutor-fw-bold tutor-d-block tutor-d-lg-none tutor-ml-auto"><?php echo esc_html( $enrolled_course_count ); ?></div>
+		<?php if ( ! $is_instructor ) : ?>
+			<!-- STUDENT DASHBOARD CARDS -->
+			<div class="tutor-col-lg-6 tutor-col-xl-4 tutor-mb-16 tutor-mb-lg-32">
+				<div class="tutor-card">
+					<div class="tutor-d-flex tutor-flex-lg-column tutor-align-center tutor-text-lg-center tutor-px-12 tutor-px-lg-24 tutor-py-8 tutor-py-lg-32">
+						<span class="tutor-round-box tutor-mr-12 tutor-mr-lg-0 tutor-mb-lg-12">
+							<i class="tutor-icon-book-open" area-hidden="true"></i>
+						</span>
+						<div class="tutor-fs-3 tutor-fw-bold tutor-d-none tutor-d-lg-block"><?php echo esc_html( $enrolled_course_count ); ?></div>
+						<div class="tutor-fs-7 tutor-color-secondary"><?php esc_html_e( 'Cours inscrits', 'tutor' ); ?></div>
+						<div class="tutor-fs-4 tutor-fw-bold tutor-d-block tutor-d-lg-none tutor-ml-auto"><?php echo esc_html( $enrolled_course_count ); ?></div>
+					</div>
 				</div>
 			</div>
-		</div>
 
-		<div class="tutor-col-lg-6 tutor-col-xl-4 tutor-mb-16 tutor-mb-lg-32">
-			<div class="tutor-card">
-				<div class="tutor-d-flex tutor-flex-lg-column tutor-align-center tutor-text-lg-center tutor-px-12 tutor-px-lg-24 tutor-py-8 tutor-py-lg-32">
-					<span class="tutor-round-box tutor-mr-12 tutor-mr-lg-0 tutor-mb-lg-12">
-						<i class="tutor-icon-mortarboard-o" area-hidden="true"></i>
-					</span>
-					<div class="tutor-fs-3 tutor-fw-bold tutor-d-none tutor-d-lg-block"><?php echo esc_html( $active_course_count ); ?></div>
-					<div class="tutor-fs-7 tutor-color-secondary"><?php esc_html_e( 'Cours actifs', 'tutor' ); ?></div>
-					<div class="tutor-fs-4 tutor-fw-bold tutor-d-block tutor-d-lg-none tutor-ml-auto"><?php echo esc_html( $active_course_count ); ?></div>
+			<div class="tutor-col-lg-6 tutor-col-xl-4 tutor-mb-16 tutor-mb-lg-32">
+				<div class="tutor-card">
+					<div class="tutor-d-flex tutor-flex-lg-column tutor-align-center tutor-text-lg-center tutor-px-12 tutor-px-lg-24 tutor-py-8 tutor-py-lg-32">
+						<span class="tutor-round-box tutor-mr-12 tutor-mr-lg-0 tutor-mb-lg-12">
+							<i class="tutor-icon-mortarboard-o" area-hidden="true"></i>
+						</span>
+						<div class="tutor-fs-3 tutor-fw-bold tutor-d-none tutor-d-lg-block"><?php echo esc_html( $active_course_count ); ?></div>
+						<div class="tutor-fs-7 tutor-color-secondary"><?php esc_html_e( 'Cours actifs', 'tutor' ); ?></div>
+						<div class="tutor-fs-4 tutor-fw-bold tutor-d-block tutor-d-lg-none tutor-ml-auto"><?php echo esc_html( $active_course_count ); ?></div>
+					</div>
 				</div>
 			</div>
-		</div>
 
-		<div class="tutor-col-lg-6 tutor-col-xl-4 tutor-mb-16 tutor-mb-lg-32">
-			<div class="tutor-card">
-				<div class="tutor-d-flex tutor-flex-lg-column tutor-align-center tutor-text-lg-center tutor-px-12 tutor-px-lg-24 tutor-py-8 tutor-py-lg-32">
-					<span class="tutor-round-box tutor-mr-12 tutor-mr-lg-0 tutor-mb-lg-12">
-						<i class="tutor-icon-trophy" area-hidden="true"></i>
-					</span>
-					<div class="tutor-fs-3 tutor-fw-bold tutor-d-none tutor-d-lg-block"><?php echo esc_html( $completed_course_count ); ?></div>
-					<div class="tutor-fs-7 tutor-color-secondary"><?php esc_html_e( 'Cours terminés', 'tutor' ); ?></div>
-					<div class="tutor-fs-4 tutor-fw-bold tutor-d-block tutor-d-lg-none tutor-ml-auto"><?php echo esc_html( $completed_course_count ); ?></div>
+			<div class="tutor-col-lg-6 tutor-col-xl-4 tutor-mb-16 tutor-mb-lg-32">
+				<div class="tutor-card">
+					<div class="tutor-d-flex tutor-flex-lg-column tutor-align-center tutor-text-lg-center tutor-px-12 tutor-px-lg-24 tutor-py-8 tutor-py-lg-32">
+						<span class="tutor-round-box tutor-mr-12 tutor-mr-lg-0 tutor-mb-lg-12">
+							<i class="tutor-icon-trophy" area-hidden="true"></i>
+						</span>
+						<div class="tutor-fs-3 tutor-fw-bold tutor-d-none tutor-d-lg-block"><?php echo esc_html( $completed_course_count ); ?></div>
+						<div class="tutor-fs-7 tutor-color-secondary"><?php esc_html_e( 'Cours terminés', 'tutor' ); ?></div>
+						<div class="tutor-fs-4 tutor-fw-bold tutor-d-block tutor-d-lg-none tutor-ml-auto"><?php echo esc_html( $completed_course_count ); ?></div>
+					</div>
 				</div>
 			</div>
-		</div>
-
-		<?php
-		if ( current_user_can( tutor()->instructor_role ) ) :
-			?>
+		<?php else : ?>
+			<!-- INSTRUCTOR DASHBOARD CARDS -->
 			<div class="tutor-col-lg-6 tutor-col-xl-4 tutor-mb-16 tutor-mb-lg-32">
 				<div class="tutor-card">
 					<div class="tutor-d-flex tutor-flex-lg-column tutor-align-center tutor-text-lg-center tutor-px-12 tutor-px-lg-24 tutor-py-8 tutor-py-lg-32">
@@ -270,104 +261,107 @@ if ( tutor_utils()->get_option( 'enable_profile_completion' ) ) {
 					</div>
 				</div>
 			</div>
-			<?php
-		endif;
-		?>
+		<?php endif; ?>
 	</div>
 </div>
 
 <?php
 /**
- * Utilisateurs actifs dans les cours en cours
+ * Show course progress only for students
  */
-$placeholder_img     = tutor()->url . 'assets/images/placeholder.svg';
-$courses_in_progress = tutor_utils()->get_active_courses_by_user( get_current_user_id() );
-?>
+if ( ! $is_instructor ) :
+	$placeholder_img = tutor()->url . 'assets/images/placeholder.svg';
+	$courses_in_progress = tutor_utils()->get_active_courses_by_user( get_current_user_id() );
+	?>
 
-<?php if ( $courses_in_progress && $courses_in_progress->have_posts() ) : ?>
-	<div class="tutor-frontend-dashboard-course-progress">
-		<div class="tutor-fs-5 tutor-fw-medium tutor-color-black tutor-text-capitalize tutor-mb-24">
-			<?php esc_html_e( 'Cours en cours', 'tutor' ); ?>
-		</div>
-		<?php
-		while ( $courses_in_progress->have_posts() ) :
-			$courses_in_progress->the_post();
-			$tutor_course_img = get_tutor_course_thumbnail_src();
-			$course_rating    = tutor_utils()->get_course_rating( get_the_ID() );
-			$course_progress  = tutor_utils()->get_course_completed_percent( get_the_ID(), 0, true );
-			$completed_number = 0 === (int) $course_progress['completed_count'] ? 1 : (int) $course_progress['completed_count'];
-			?>
-			<div class="tutor-course-progress-item tutor-card tutor-mb-20">
-				<div class="tutor-row tutor-gx-0">
-					<div class="tutor-col-lg-4">
-						<div class="tutor-ratio tutor-ratio-3x2">
-							<img class="tutor-card-image-left" src="<?php echo empty( $tutor_course_img ) ? esc_url( $placeholder_img ) : esc_url( $tutor_course_img ); ?>" alt="<?php the_title(); ?>" loading="lazy">
+	<?php if ( $courses_in_progress && $courses_in_progress->have_posts() ) : ?>
+		<div class="tutor-frontend-dashboard-course-progress">
+			<div class="tutor-fs-5 tutor-fw-medium tutor-color-black tutor-text-capitalize tutor-mb-24">
+				<?php esc_html_e( 'Cours en cours', 'tutor' ); ?>
+			</div>
+			<?php
+			while ( $courses_in_progress->have_posts() ) :
+				$courses_in_progress->the_post();
+				$tutor_course_img = get_tutor_course_thumbnail_src();
+				$course_rating    = tutor_utils()->get_course_rating( get_the_ID() );
+				$course_progress  = tutor_utils()->get_course_completed_percent( get_the_ID(), 0, true );
+				$completed_number = 0 === (int) $course_progress['completed_count'] ? 1 : (int) $course_progress['completed_count'];
+				?>
+				<div class="tutor-course-progress-item tutor-card tutor-mb-20">
+					<div class="tutor-row tutor-gx-0">
+						<div class="tutor-col-lg-4">
+							<div class="tutor-ratio tutor-ratio-3x2">
+								<img class="tutor-card-image-left" src="<?php echo empty( $tutor_course_img ) ? esc_url( $placeholder_img ) : esc_url( $tutor_course_img ); ?>" alt="<?php the_title(); ?>" loading="lazy">
+							</div>
 						</div>
-					</div>
 
-					<div class="tutor-col-lg-8 tutor-align-self-center">
-						<div class="tutor-card-body">
-						<?php if ( $course_rating ) : ?>
-								<div class="tutor-ratings tutor-mb-4">
-									<?php tutor_utils()->star_rating_generator( $course_rating->rating_avg ); ?>
-									<div class="tutor-ratings-count">
-										<?php echo esc_html( number_format( $course_rating->rating_avg, 2 ) ); ?>
+						<div class="tutor-col-lg-8 tutor-align-self-center">
+							<div class="tutor-card-body">
+							<?php if ( $course_rating ) : ?>
+									<div class="tutor-ratings tutor-mb-4">
+										<?php tutor_utils()->star_rating_generator( $course_rating->rating_avg ); ?>
+										<div class="tutor-ratings-count">
+											<?php echo esc_html( number_format( $course_rating->rating_avg, 2 ) ); ?>
+										</div>
+									</div>
+								<?php endif; ?>
+
+								<div class="tutor-course-progress-item-title tutor-fs-5 tutor-fw-medium tutor-color-black tutor-mb-12">
+								<?php the_title(); ?>
+								</div>
+
+								<div class="tutor-d-flex tutor-fs-7 tutor-mb-32">
+									<span class="tutor-color-muted tutor-mr-4"><?php esc_html_e( 'Leçons terminées :', 'tutor' ); ?></span>
+									<span class="tutor-fw-medium tutor-color-black">
+										<span>
+										<?php echo esc_html( $course_progress['completed_count'] ); ?>
+										</span>
+									<?php esc_html_e( 'sur', 'tutor' ); ?>
+										<span>
+										<?php echo esc_html( $course_progress['total_count'] ); ?>
+										</span>
+									<?php echo esc_html( _n( 'leçon', 'leçons', $completed_number, 'tutor' ) ); ?>
+									</span>
+								</div>
+
+								<div class="tutor-row tutor-align-center">
+									<div class="tutor-col">
+										<div class="tutor-progress-bar tutor-mr-16" style="--tutor-progress-value:<?php echo esc_attr( $course_progress['completed_percent'] ); ?>%"><span class="tutor-progress-value" area-hidden="true"></span></div>
+									</div>
+
+									<div class="tutor-col-auto">
+										<span class="progress-percentage tutor-fs-7 tutor-color-muted">
+											<span class="tutor-fw-medium tutor-color-black ">
+											<?php echo esc_html( $course_progress['completed_percent'] . '%' ); ?>
+											</span><?php esc_html_e( 'Complété', 'tutor' ); ?>
+										</span>
 									</div>
 								</div>
-							<?php endif; ?>
-
-							<div class="tutor-course-progress-item-title tutor-fs-5 tutor-fw-medium tutor-color-black tutor-mb-12">
-							<?php the_title(); ?>
-							</div>
-
-							<div class="tutor-d-flex tutor-fs-7 tutor-mb-32">
-								<span class="tutor-color-muted tutor-mr-4"><?php esc_html_e( 'Leçons terminées :', 'tutor' ); ?></span>
-								<span class="tutor-fw-medium tutor-color-black">
-									<span>
-									<?php echo esc_html( $course_progress['completed_count'] ); ?>
-									</span>
-								<?php esc_html_e( 'sur', 'tutor' ); ?>
-									<span>
-									<?php echo esc_html( $course_progress['total_count'] ); ?>
-									</span>
-								<?php echo esc_html( _n( 'leçon', 'leçons', $completed_number, 'tutor' ) ); ?>
-								</span>
-							</div>
-
-							<div class="tutor-row tutor-align-center">
-								<div class="tutor-col">
-									<div class="tutor-progress-bar tutor-mr-16" style="--tutor-progress-value:<?php echo esc_attr( $course_progress['completed_percent'] ); ?>%"><span class="tutor-progress-value" area-hidden="true"></span></div>
-								</div>
-
-								<div class="tutor-col-auto">
-									<span class="progress-percentage tutor-fs-7 tutor-color-muted">
-										<span class="tutor-fw-medium tutor-color-black ">
-										<?php echo esc_html( $course_progress['completed_percent'] . '%' ); ?>
-										</span><?php esc_html_e( 'Complété', 'tutor' ); ?>
-									</span>
-								</div>
 							</div>
 						</div>
+						<a class="tutor-stretched-link" href="<?php the_permalink(); ?>"></a>
 					</div>
-					<a class="tutor-stretched-link" href="<?php the_permalink(); ?>"></a>
 				</div>
-			</div>
-			<?php endwhile; ?>
-		<?php wp_reset_postdata(); ?>
-	</div>
+				<?php endwhile; ?>
+			<?php wp_reset_postdata(); ?>
+		</div>
+	<?php endif; ?>
 <?php endif; ?>
 
 <?php
-$instructor_course = tutor_utils()->get_courses_for_instructors( get_current_user_id() );
+/**
+ * Show instructor courses only for instructors
+ */
+if ( $is_instructor ) {
+	$instructor_course = tutor_utils()->get_courses_for_instructors( get_current_user_id() );
 
-if ( count( $instructor_course ) ) {
-	$course_badges = array(
-		'publish' => 'success',
-		'pending' => 'warning',
-		'trash'   => 'danger',
-	);
-
-	?>
+	if ( count( $instructor_course ) ) {
+		$course_badges = array(
+			'publish' => 'success',
+			'pending' => 'warning',
+			'trash'   => 'danger',
+		);
+		?>
 		<div class="popular-courses-heading-dashboard tutor-d-flex tutor-justify-between tutor-mb-24 tutor-mt-md-40 tutor-mt-0">
 			<span class="tutor-fs-5 tutor-fw-medium tutor-color-black"><?php esc_html_e( 'Mes cours', 'tutor' ); ?></span>
 			<a class="tutor-btn tutor-btn-ghost" href="<?php echo esc_url( tutor_utils()->tutor_dashboard_url( 'my-courses' ) ); ?>">
@@ -391,7 +385,7 @@ if ( count( $instructor_course ) ) {
 							</th>
 						</tr>
 					</thead>
-	
+
 					<tbody>
 						<?php if ( is_array( $instructor_course ) && count( $instructor_course ) ) : ?>
 							<?php
@@ -472,9 +466,9 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 </script>
 
-
 			</div>
 		</div>
-	<?php
+		<?php
+	}
 }
 ?>
